@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How I built investmentregulation.ca, Daniel Sultan</title>
+    <meta name="description" content="How Daniel Sultan built investmentregulation.ca, a free course for the CIRE exam, including the things that went wrong first." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800;900&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="masthead">
+      <div class="frame">
+        <a class="wordmark" href="index.html">Daniel<span class="surname">&nbsp;Sultan</span></a>
+        <nav class="mainnav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="cire.html" aria-current="page" aria-label="investmentregulation.ca"><span class="nav-long">investmentregulation.ca</span><span class="nav-short" aria-hidden="true">CIRE</span></a>
+          <a href="mailto:thedanielsultan@gmail.com">Email</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-head frame">
+        <p class="eyebrow">investmentregulation.ca · August 2026</p>
+        <h1>How I built it, and what I got wrong first.</h1>
+          <p class="byline">Written, structured and built by Daniel Sultan. The topics follow CIRO's CIRE syllabus; the lessons, explanations and questions are mine.</p>
+        <p>
+          I'm taking the CIRE, the exam you need to pass to move up in financial sales in
+          Canada. What you get to study from is three PDFs. They tell you what's on the
+          exam. They don't teach you any of it.
+        </p>
+      </section>
+
+      <section class="band-tight frame">
+        <figure class="feature-shot">
+          <img src="assets/work/cire-home.png" alt="A recording of the investmentregulation.ca study system in use" />
+          <figcaption>The site, running.</figcaption>
+        </figure>
+      </section>
+
+      <section class="band frame">
+        <div class="split">
+          <aside>The problem</aside>
+          <div class="prose">
+            <h3>They start halfway through.</h3>
+            <p>
+              The first thing you read is a sentence like "the IDPC Rules govern Approved
+              Persons in respect of suitability determination." If you already work in the
+              industry, fine. If you don't, that's four things you'd have to look up before
+              the sentence means anything, and the document never tells you any of them.
+            </p>
+            <p>
+              I set myself a test for whether I'd fixed it: could my eight-year-old brother
+              open the first lesson and follow it? That's why lesson one is "what is
+              investing" and not anything about regulation. By chapter eight, a sentence
+              about who oversees investment dealers reads as obvious instead of as a wall.
+            </p>
+
+            <h3>What's in it</h3>
+            <ul>
+              <li>69 lessons, in order, each one building on the one before.</li>
+              <li>A hundred practice questions, weighted the same way the real exam is.</li>
+              <li>Flashcards that show you a card again sooner if you got it wrong.</li>
+              <li>A drill mode with no clock, and a separate timed round for when you want the pressure.</li>
+              <li>A full mock exam you can jump around in and review afterwards.</li>
+              <li>A glossary you can search, a list of everything you've got wrong, and bookmarks.</li>
+              <li>Dark mode, and you can do the whole thing from the keyboard.</li>
+            </ul>
+            <p>
+              There's no account and nothing to pay. Your progress is stored in your own
+              browser, so nothing you do on it is sent to me or anyone else.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band frame">
+        <div class="split">
+          <aside>What went wrong</aside>
+          <div class="prose">
+            <h3>The first version was bad.</h3>
+            <p>
+              It was a quiz that assumed you already understood finance, which is exactly
+              the thing I was annoyed about in the first place. I threw it out.
+            </p>
+            <p>
+              Then I found the correct answer was the longest option 72% of the time. If a
+              quarter of answers should be right by chance, that means you could pass
+              without reading the questions properly, you'd just pick the longest one. I
+              went back through all 98 questions and evened out the lengths.
+            </p>
+            <p>
+              The flashcards passed every test I ran and then didn't flip when I tried them
+              on my actual phone. That took a while to work out: the tap was landing on an
+              element that was being rotated in 3D, so the touch never reached the card.
+            </p>
+            <p>
+              And the definitions were wrong. Not slightly, properly wrong. I rewrote all
+              69 of them by hand.
+            </p>
+
+            <h3>How it ended up looking like this</h3>
+            <p>
+              The first design had every generic look you've seen a hundred times. I
+              rebuilt it on the 1970 New York City Transit Authority Graphics Standards
+              Manual instead: one typeface, colour used only for identity, red kept strictly
+              for warnings, no gradients, no drop shadows. A rulebook someone else already
+              thought hard about.
+            </p>
+            <div class="links">
+              <a class="link" href="https://investmentregulation.ca">Open the site</a>
+              <a class="link" href="https://medium.com/@itsdanielsultan/introducing-investmentregulation-ca-659e3e421be0">The launch post</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="night">
+      <div class="frame">
+        <div class="contact-grid">
+          <div>
+            <h2>Questions about it?</h2>
+            <p>Happy to talk through any of it, including the parts I got wrong.</p>
+            <div class="mailrow">
+              <a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a>
+            </div>
+          </div>
+          <div class="directory">
+            <a href="https://investmentregulation.ca"><span>CIRE site</span><span>investmentregulation.ca</span><span>↗</span></a>
+            <a href="https://www.linkedin.com/in/daniel-sultan"><span>LinkedIn</span><span>daniel-sultan</span><span>↗</span></a>
+            <a href="https://github.com/itsdanielsultan"><span>GitHub</span><span>@itsdanielsultan</span><span>↗</span></a>
+            <a href="index.html"><span>Home</span><span>Back to everything else</span><span>→</span></a>
+          </div>
+        </div>
+        <div class="colophon"><span>© 2026 Daniel Sultan</span><span>investmentregulation.ca</span></div>
+      </div>
+    </footer>
+  </body>
+</html>

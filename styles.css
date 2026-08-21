@@ -66,11 +66,7 @@ a { color: inherit; text-decoration: none; }
 .wordmark {
   font-family: var(--data); font-size: 12px; font-weight: 500;
   letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap;
-  display: flex; align-items: center; gap: 9px;
-}
-.wordmark::before {
-  content: ""; width: 8px; height: 8px; flex: none;
-  background: var(--signal); border-radius: 50%;
+  display: flex; align-items: center; gap: 0;
 }
 
 .mainnav { margin-left: auto; display: flex; gap: clamp(12px, 2.2vw, 26px); overflow-x: auto; scrollbar-width: none; }
@@ -164,7 +160,14 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--rule-hair);
   transition: background-color .18s;
 }
-a.lrow { position: relative; border-radius: 2px; will-change: transform; }
+a.lrow {
+  --lrow-hover-pad: clamp(18px, 2.2vw, 30px);
+  position: relative;
+  margin-inline: calc(-1 * var(--lrow-hover-pad));
+  padding: 30px var(--lrow-hover-pad) 28px;
+  border-radius: 8px;
+  will-change: transform;
+}
 a.lrow, a.lane { transition: background-color .18s ease, transform .18s ease, box-shadow .18s ease; }
 a.lrow:hover, a.lrow:focus-visible {
   background: var(--stock-edge); outline: none;
@@ -328,6 +331,10 @@ a.lane:hover { background: var(--stock-edge); }
 }
 @media (max-width: 720px) {
   .lrow, .lrow--media { grid-template-columns: 1fr; gap: 10px; padding-left: 12px; }
+  a.lrow {
+    --lrow-hover-pad: 16px;
+    padding: 26px var(--lrow-hover-pad) 24px;
+  }
   .lrow--media .lrow-media { grid-column: 1; max-width: none; }
   .lrow-when { display: flex; flex-wrap: wrap; gap: 10px; line-height: 1.4; }
   .lrow-when strong { display: inline; }

@@ -432,10 +432,11 @@ a.lrow:hover .lrow-media .peek { opacity: 1; }
 /* The one big feature block */
 .feature { border-block: 1.5px solid var(--ink); }
 .feature-inner {
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  display: grid; grid-template-columns: minmax(0, 1fr);
   gap: clamp(24px, 4vw, 56px); align-items: center;
   padding-block: clamp(30px, 4.5vw, 56px);
 }
+.feature-inner > div { max-width: 760px; }
 .feature h2 {
   font-family: var(--display); font-weight: 800;
   font-size: clamp(2.1rem, 4.6vw, 3.4rem); line-height: 0.96;
@@ -443,11 +444,6 @@ a.lrow:hover .lrow-media .peek { opacity: 1; }
 }
 .feature p { margin: 0 0 14px; max-width: 52ch; color: var(--ink-soft); }
 .feature p.first { color: var(--ink); font-size: 1.06rem; }
-.feature-shot img { width: 100%; border: 1.5px solid var(--ink); background: var(--stock-deep); }
-.feature-shot figcaption {
-  font-family: var(--data); font-size: 10.5px; letter-spacing: 0.06em;
-  color: var(--ink-faint); margin-top: 7px;
-}
 .factline {
   display: flex; flex-wrap: wrap; gap: 6px 0; margin: 0 0 18px;
   border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
@@ -461,10 +457,6 @@ a.lrow:hover .lrow-media .peek { opacity: 1; }
 .factline span {
   font-family: var(--data); font-size: 10px; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--ink-faint);
-}
-
-@media (max-width: 860px) {
-  .feature-inner { grid-template-columns: 1fr; }
 }
 
 /* Authorship line under a page heading */

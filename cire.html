@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How I built investmentregulation.ca, Daniel Sultan</title>
-    <meta name="description" content="How Daniel Sultan built investmentregulation.ca, a free course for the CIRE exam, including the things that went wrong first." />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="description" content="How Daniel Sultan built investmentregulation.ca, a free course for the CIRE exam." />
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("daniel-theme");
+          var preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=5" />
+    <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800;900&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -26,14 +34,17 @@
           <a href="cire.html" aria-current="page" aria-label="investmentregulation.ca"><span class="nav-long">investmentregulation.ca</span><span class="nav-short" aria-hidden="true">CIRE</span></a>
           <a href="mailto:thedanielsultan@gmail.com">Email</a>
         </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+          <span class="theme-toggle-track" aria-hidden="true"></span>
+        </button>
       </div>
     </header>
 
     <main id="main">
       <section class="page-head frame">
         <p class="eyebrow">investmentregulation.ca · August 2026</p>
-        <h1>How I built it, and what I got wrong first.</h1>
-          <p class="byline">Written, structured and built by Daniel Sultan. The topics follow CIRO's CIRE syllabus; the lessons, explanations and questions are mine.</p>
+        <h1>How I built it.</h1>
+        <p class="byline">Written, structured and built by Daniel Sultan. The topics follow CIRO's CIRE syllabus; the lessons, explanations and questions are mine.</p>
         <p>
           I'm taking the CIRE, the exam you need to pass to move up in financial sales in
           Canada. What you get to study from is three PDFs. They tell you what's on the
@@ -139,5 +150,26 @@
         <div class="colophon"><span>© 2026 Daniel Sultan</span><span>investmentregulation.ca</span></div>
       </div>
     </footer>
+
+    <script>
+      (function () {
+        var themeToggle = document.getElementById("theme-toggle");
+        if (!themeToggle) return;
+
+        var syncThemeToggle = function () {
+          var isDark = document.documentElement.dataset.theme === "dark";
+          themeToggle.setAttribute("aria-pressed", String(isDark));
+          themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+        };
+
+        syncThemeToggle();
+        themeToggle.addEventListener("click", function () {
+          var nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+          document.documentElement.dataset.theme = nextTheme;
+          try { localStorage.setItem("daniel-theme", nextTheme); } catch (error) {}
+          syncThemeToggle();
+        });
+      })();
+    </script>
   </body>
 </html>

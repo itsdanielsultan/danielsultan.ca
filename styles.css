@@ -112,7 +112,7 @@ a { color: inherit; text-decoration: none; }
   cursor: pointer;
   transition: background-color .18s ease, transform .18s ease;
 }
-.theme-toggle:hover { transform: translateY(-1px); }
+.theme-toggle:hover { transform: none; }
 .theme-toggle-track,
 .theme-toggle-track::before,
 .theme-toggle-track::after { position: absolute; display: block; }

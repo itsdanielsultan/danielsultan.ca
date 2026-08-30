@@ -7,6 +7,7 @@
     <meta name="description" content="Contact Daniel Sultan and find his public work, writing and profiles." />
     <script>
       (function () {
+        document.documentElement.classList.add("js");
         try {
           var savedTheme = localStorage.getItem("daniel-theme");
           var preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -16,7 +17,7 @@
         }
       })();
     </script>
-    <link rel="stylesheet" href="styles.css?v=9" />
+    <link rel="stylesheet" href="styles.css?v=10" />
     <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +30,8 @@
     <header class="masthead">
       <div class="frame">
         <a class="wordmark" href="index.html">Daniel<span class="surname">&nbsp;Sultan</span></a>
-        <nav class="mainnav" aria-label="Main">
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open main navigation">Menu</button>
+        <nav class="mainnav" id="main-navigation" aria-label="Main">
           <a class="nav-home" href="index.html">Home</a>
           <a href="portfolio.html">Portfolio</a>
           <a href="proof.html">Proof</a>
@@ -148,6 +150,44 @@
 
     <script>
       (function () {
+        var navToggle = document.getElementById("nav-toggle");
+        var mainNavigation = document.getElementById("main-navigation");
+        if (navToggle && mainNavigation) {
+          var closeMainNavigation = function (returnFocus) {
+            mainNavigation.classList.remove("is-open");
+            navToggle.setAttribute("aria-expanded", "false");
+            navToggle.setAttribute("aria-label", "Open main navigation");
+            if (returnFocus) navToggle.focus();
+          };
+
+          navToggle.addEventListener("click", function () {
+            var willOpen = navToggle.getAttribute("aria-expanded") !== "true";
+            mainNavigation.classList.toggle("is-open", willOpen);
+            navToggle.setAttribute("aria-expanded", String(willOpen));
+            navToggle.setAttribute("aria-label", willOpen ? "Close main navigation" : "Open main navigation");
+          });
+
+          mainNavigation.addEventListener("click", function (event) {
+            if (event.target.closest("a")) closeMainNavigation(false);
+          });
+
+          document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
+              closeMainNavigation(true);
+            }
+          });
+
+          var desktopNavigation = window.matchMedia("(min-width: 641px)");
+          var resetMobileNavigation = function (event) {
+            if (event.matches) closeMainNavigation(false);
+          };
+          if (desktopNavigation.addEventListener) {
+            desktopNavigation.addEventListener("change", resetMobileNavigation);
+          } else {
+            desktopNavigation.addListener(resetMobileNavigation);
+          }
+        }
+
         var themeToggle = document.getElementById("theme-toggle");
         if (themeToggle) {
           var syncThemeToggle = function () {

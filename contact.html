@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact · Daniel Sultan</title>
+    <meta name="description" content="Contact Daniel Sultan and find his public work, writing and profiles." />
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("daniel-theme");
+          var preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=9" />
+    <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800;900&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <a class="skip" href="#links">Skip to contact links</a>
+
+    <header class="masthead">
+      <div class="frame">
+        <a class="wordmark" href="index.html">Daniel<span class="surname">&nbsp;Sultan</span></a>
+        <nav class="mainnav" aria-label="Main">
+          <a class="nav-home" href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="proof.html">Proof</a>
+          <a href="index.html#history">History</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+          <span class="theme-toggle-track" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-head frame" aria-labelledby="contact-title">
+        <p class="eyebrow">Greater Toronto Area, Canada</p>
+        <h1 id="contact-title">Get in touch.</h1>
+        <p>For a project, role or question about something I built, email is the simplest way to reach me.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="mailto:thedanielsultan@gmail.com">Send an email</a>
+          <a class="btn btn-ghost" href="assets/Daniel_Sultan_Resume.pdf">Resume PDF</a>
+        </div>
+      </section>
+
+      <section class="band frame" id="links">
+        <div class="rule-label">
+          <h2>Find me online</h2>
+          <span class="count">Work, code and writing</span>
+        </div>
+
+        <div class="ledger-rows">
+          <a class="lrow lrow--compact" href="https://www.linkedin.com/in/daniel-sultan">
+            <div class="lrow-when"><strong>Profile</strong><span>LinkedIn</span></div>
+            <div>
+              <h3>Professional work and experience</h3>
+              <p class="plain">My current profile, roles and project updates.</p>
+              <span class="link">Open LinkedIn</span>
+            </div>
+          </a>
+
+          <a class="lrow lrow--compact" href="https://investmentregulation.ca">
+            <div class="lrow-when"><strong>Project</strong><span>CIRE study site</span></div>
+            <div>
+              <h3>InvestmentRegulation.ca</h3>
+              <p class="plain">The free, open-source study site I built for the Canadian Investment Regulatory Exam.</p>
+              <span class="link">Open the site</span>
+            </div>
+          </a>
+
+          <a class="lrow lrow--compact" href="https://github.com/itsdanielsultan">
+            <div class="lrow-when"><strong>Code</strong><span>GitHub</span></div>
+            <div>
+              <h3>Projects and source code</h3>
+              <p class="plain">Public repositories for the things I build.</p>
+              <span class="link">Open GitHub</span>
+            </div>
+          </a>
+
+          <a class="lrow lrow--compact" href="https://medium.com/@itsdanielsultan">
+            <div class="lrow-when"><strong>Writing</strong><span>Medium</span></div>
+            <div>
+              <h3>Build notes and project stories</h3>
+              <p class="plain">Short explanations of what I made and how I approached it.</p>
+              <span class="link">Read on Medium</span>
+            </div>
+          </a>
+
+          <a class="lrow lrow--compact" href="https://linktr.ee/danielsultan">
+            <div class="lrow-when"><strong>Directory</strong><span>Linktree</span></div>
+            <div>
+              <h3>All public links</h3>
+              <p class="plain">A short directory of my sites and social profiles.</p>
+              <span class="link">Open Linktree</span>
+            </div>
+          </a>
+
+          <a class="lrow lrow--compact" href="assets/Daniel_Sultan_Resume.pdf">
+            <div class="lrow-when"><strong>PDF</strong><span>Resume</span></div>
+            <div>
+              <h3>Work history and experience</h3>
+              <p class="plain">A downloadable copy of my current resume.</p>
+              <span class="link">Open the resume</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="night">
+      <div class="frame">
+        <div class="contact-grid">
+          <div>
+            <h2>Email Daniel.</h2>
+            <p>Send me a note about a project, idea or opportunity.</p>
+            <div class="mailrow">
+              <a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a>
+              <button class="copybtn no-print" type="button" id="copybtn" data-mail="thedanielsultan@gmail.com">Copy</button>
+            </div>
+          </div>
+
+          <div class="directory">
+            <a href="https://investmentregulation.ca"><span>CIRE site</span><span>investmentregulation.ca</span><span>↗</span></a>
+            <a href="https://www.linkedin.com/in/daniel-sultan"><span>LinkedIn</span><span>daniel-sultan</span><span>↗</span></a>
+            <a href="https://github.com/itsdanielsultan"><span>GitHub</span><span>@itsdanielsultan</span><span>↗</span></a>
+            <a href="https://medium.com/@itsdanielsultan"><span>Medium</span><span>@itsdanielsultan</span><span>↗</span></a>
+            <a href="https://linktr.ee/danielsultan" rel="me"><span>Linktree</span><span>linktr.ee/danielsultan</span><span>↗</span></a>
+            <a href="assets/Daniel_Sultan_Resume.pdf"><span>Resume</span><span>PDF</span><span>↓</span></a>
+          </div>
+        </div>
+
+        <div class="colophon">
+          <span>© 2026 Daniel Sultan</span>
+          <span>Greater Toronto Area, Canada</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var themeToggle = document.getElementById("theme-toggle");
+        if (themeToggle) {
+          var syncThemeToggle = function () {
+            var isDark = document.documentElement.dataset.theme === "dark";
+            themeToggle.setAttribute("aria-pressed", String(isDark));
+            themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+          };
+
+          syncThemeToggle();
+          themeToggle.addEventListener("click", function () {
+            var nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+            document.documentElement.dataset.theme = nextTheme;
+            try { localStorage.setItem("daniel-theme", nextTheme); } catch (error) {}
+            syncThemeToggle();
+          });
+        }
+
+        var copy = document.getElementById("copybtn");
+        if (copy) {
+          copy.addEventListener("click", async function () {
+            copy.textContent = "Copying";
+            try {
+              var copied = false;
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                try {
+                  await Promise.race([
+                    navigator.clipboard.writeText(copy.dataset.mail),
+                    new Promise(function (_, reject) {
+                      setTimeout(function () { reject(new Error("Clipboard timeout")); }, 800);
+                    })
+                  ]);
+                  copied = true;
+                } catch (error) {
+                  copied = false;
+                }
+              }
+              if (!copied) {
+                var input = document.createElement("textarea");
+                input.value = copy.dataset.mail;
+                input.setAttribute("readonly", "");
+                input.style.position = "fixed";
+                input.style.opacity = "0";
+                document.body.appendChild(input);
+                input.select();
+                copied = document.execCommand("copy");
+                input.remove();
+              }
+              if (!copied) throw new Error("Clipboard unavailable");
+              copy.textContent = "Copied";
+              setTimeout(function () { copy.textContent = "Copy"; }, 1800);
+            } catch (error) {
+              copy.textContent = "Use email link";
+              setTimeout(function () { copy.textContent = "Copy"; }, 1800);
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

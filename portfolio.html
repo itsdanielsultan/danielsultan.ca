@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio · Daniel Sultan</title>
+    <meta
+      name="description"
+      content="A chronological record of websites, physical projects and open-source tools built by Daniel Sultan."
+    />
+    <meta property="og:title" content="Portfolio · Daniel Sultan" />
+    <meta
+      property="og:description"
+      content="A chronological record of websites, physical projects and open-source tools built by Daniel Sultan."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://danielsultan.ca/portfolio.html" />
+    <meta property="og:image" content="https://danielsultan.ca/assets/daniel-sultan-social-card.png?v=1" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Daniel Sultan portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://danielsultan.ca/assets/daniel-sultan-social-card.png?v=1" />
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("daniel-theme");
+          var preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=9" />
+    <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800;900&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="portfolio-page">
+    <a class="skip" href="#portfolio-list">Skip to the portfolio</a>
+
+    <header class="masthead">
+      <div class="frame">
+        <a class="wordmark" href="index.html">Daniel<span class="surname">&nbsp;Sultan</span></a>
+        <nav class="mainnav" aria-label="Main">
+          <a class="nav-home" href="index.html">Home</a>
+          <a href="portfolio.html" aria-current="page">Portfolio</a>
+          <a href="proof.html">Proof</a>
+          <a href="index.html#history">History</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+          <span class="theme-toggle-track" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero page-head frame">
+        <p class="eyebrow">Built, tested and published</p>
+        <h1>Portfolio</h1>
+        <p>
+          A chronological record of things I have made. Each entry separates what I built
+          from what happened after I published or submitted it.
+        </p>
+      </header>
+
+      <section class="band frame" aria-labelledby="portfolio-heading">
+        <div class="rule-label">
+          <h2 id="portfolio-heading">Selected work</h2>
+          <span class="count">Newest first · 2025–2026</span>
+        </div>
+
+        <div class="portfolio-list ledger-rows" id="portfolio-list">
+          <article class="portfolio-entry lrow lrow--media" aria-labelledby="portfolio-cire">
+            <div class="lrow-when">
+              <strong><time datetime="2026-08">Aug 2026</time></strong>
+              <span>Website · Current</span>
+            </div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-cire">InvestmentRegulation.ca</h3>
+              <p class="org">Stage: live · Free, open-source CIRE study website</p>
+              <p class="plain">
+                The official exam material says what people need to know, but does not teach
+                it from the beginning. I turned the syllabus into 69 plain-language lessons
+                across eight chapters.
+              </p>
+              <p class="plain">
+                The finished site includes 100 practice questions, flashcards, short drills
+                and a mock exam. It needs no account or payment, and progress stays in the
+                learner's own browser.
+              </p>
+              <div class="links">
+                <a class="link" href="https://investmentregulation.ca">Open the study site</a>
+                <a class="link" href="cire.html">Read the case study</a>
+                <a class="link" href="https://github.com/itsdanielsultan/Daniel-CIRE">View the source</a>
+              </div>
+            </div>
+            <figure class="portfolio-media lrow-media">
+              <img src="assets/work/cire-home.png" alt="The InvestmentRegulation.ca home page" loading="eager" />
+              <figcaption>69 lessons · 100 questions · eight chapters</figcaption>
+            </figure>
+          </article>
+
+          <article class="portfolio-entry lrow lrow--media" aria-labelledby="portfolio-synapse">
+            <div class="lrow-when">
+              <strong><time datetime="2026-06-02">Jun 2026</time></strong>
+              <span>Physical game</span>
+            </div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-synapse">Synapse board-game prototype</h3>
+              <p class="org">Stage: physical prototype · Informal classmate testing</p>
+              <p class="plain">
+                One player makes a pattern with shape tiles. The other studies it, then
+                rebuilds the pattern from memory after the board is cleared. I designed the
+                pieces and built the prototype by hand for under $12.
+              </p>
+              <p class="plain">
+                I tested grids from 2×2 to 5×5 with classmates. The smallest board was too
+                easy; nobody completed the 5×5 board perfectly on a first attempt. Those
+                sessions led me to replace pass-or-fail scoring with an accuracy percentage.
+              </p>
+              <div class="links">
+                <a class="link" href="https://medium.com/@itsdanielsultan/i-wanted-to-build-a-game-1a72ee7dcdb5">Read the build story</a>
+              </div>
+            </div>
+            <figure class="portfolio-media lrow-media">
+              <img src="assets/work/synapse.png" alt="The handmade Synapse board and shape tiles" loading="lazy" />
+              <figcaption>Handmade prototype, tested with classmates</figcaption>
+            </figure>
+          </article>
+
+          <article class="portfolio-entry lrow lrow--media" aria-labelledby="portfolio-crane">
+            <div class="lrow-when">
+              <strong><time datetime="2026-06">Jun 2026</time></strong>
+              <span>Physics project</span>
+            </div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-crane">Electromagnetic physics demonstration</h3>
+              <p class="org">Stage: completed school project · Working crane, experiment and project site</p>
+              <p class="plain">
+                I built a small crane that lifts metal when current runs through a coil and
+                releases it when the power is switched off.
+              </p>
+              <p class="plain">
+                I changed one variable at a time, including the amount of wire, the current
+                and the core material, recorded what changed, and published the hypothesis,
+                procedure, results and prototype photographs as a website.
+              </p>
+              <div class="links">
+                <a class="link" href="https://itsdanielsultan.github.io/Physics-Website/">Open the project</a>
+                <a class="link" href="https://github.com/itsdanielsultan/Physics-Website">View the source</a>
+              </div>
+            </div>
+            <figure class="portfolio-media lrow-media">
+              <img src="assets/work/crane.png" alt="Daniel Sultan's electromagnetic crane project website" loading="lazy" />
+              <figcaption>The experiment, prototype and results</figcaption>
+            </figure>
+          </article>
+
+          <article class="portfolio-entry lrow lrow--media" aria-labelledby="portfolio-raycast">
+            <div class="lrow-when">
+              <strong><time datetime="2026-02-03">Feb 2026</time></strong>
+              <span>Code · Submitted</span>
+            </div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-raycast">Craft Capture software extension</h3>
+              <p class="org">Stage: submitted to Raycast · Automatically closed · Not merged</p>
+              <p class="plain">
+                I built a Mac shortcut for sending a task into Craft without stopping to
+                switch apps. I tested the distribution build and submitted the extension to
+                Raycast's public extensions repository as pull request #25100.
+              </p>
+              <p class="plain">
+                The submission was automatically closed for inactivity on February 24,
+                2026. It was not reviewed or merged into the Raycast Store.
+              </p>
+              <span class="honest">Status: submitted, closed, not merged</span>
+              <div class="links">
+                <a class="link" href="https://github.com/raycast/extensions/pull/25100">Read the pull request</a>
+              </div>
+            </div>
+            <figure class="portfolio-media lrow-media">
+              <img src="assets/work/raycast-craft.png" alt="Craft Capture, a shortcut between Raycast and Craft" loading="lazy" />
+              <figcaption>Public submission #25100 · not merged</figcaption>
+            </figure>
+          </article>
+
+          <article class="portfolio-entry lrow lrow--media" aria-labelledby="portfolio-pieoneer">
+            <div class="lrow-when">
+              <strong><time datetime="2025-12">Dec 2025</time></strong>
+              <span>Open source · Ongoing</span>
+            </div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-pieoneer">Pieoneer shortcut collection</h3>
+              <p class="org">Stage: ongoing open-source project</p>
+              <p class="plain">
+                Pieoneer opens a wheel of commands around the cursor when a key is held. I
+                made and published a collection of shortcut wheels for the apps I use most,
+                so common actions stay close to the pointer.
+              </p>
+              <p class="plain">
+                The collection is public, editable and has received 14 GitHub stars as of
+                August 2026.
+              </p>
+              <div class="links">
+                <a class="link" href="https://github.com/itsdanielsultan/pieoneer">Open it on GitHub</a>
+              </div>
+            </div>
+            <figure class="portfolio-media lrow-media">
+              <img src="assets/work/pieoneer.png" alt="A Pieoneer radial shortcut menu for a Mac app" loading="lazy" />
+              <figcaption>Open-source shortcut wheels · 14 GitHub stars</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="night" id="contact">
+      <div class="frame">
+        <div class="contact-grid">
+          <div>
+            <h2>Get in touch.</h2>
+            <p>I’d love to hear from you. Send me an email about a project, idea or opportunity.</p>
+            <div class="mailrow">
+              <a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a>
+              <button class="copybtn no-print" type="button" id="copybtn" data-mail="thedanielsultan@gmail.com">Copy</button>
+            </div>
+            <p>Greater Toronto Area, Canada</p>
+          </div>
+
+          <div class="directory">
+            <a href="https://investmentregulation.ca"><span>CIRE site</span><span>investmentregulation.ca</span><span>↗</span></a>
+            <a href="https://www.linkedin.com/in/daniel-sultan"><span>LinkedIn</span><span>daniel-sultan</span><span>↗</span></a>
+            <a href="https://github.com/itsdanielsultan"><span>GitHub</span><span>@itsdanielsultan</span><span>↗</span></a>
+            <a href="https://medium.com/@itsdanielsultan"><span>Medium</span><span>@itsdanielsultan</span><span>↗</span></a>
+            <a href="assets/Daniel_Sultan_Resume.pdf"><span>Resume</span><span>PDF, two pages</span><span>↓</span></a>
+          </div>
+        </div>
+
+        <div class="colophon">
+          <span>© 2026 Daniel Sultan</span>
+          <span>Portfolio updated August 2026</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var themeToggle = document.getElementById("theme-toggle");
+        if (themeToggle) {
+          var syncThemeToggle = function () {
+            var isDark = document.documentElement.dataset.theme === "dark";
+            themeToggle.setAttribute("aria-pressed", String(isDark));
+            themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+          };
+
+          syncThemeToggle();
+          themeToggle.addEventListener("click", function () {
+            var nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+            document.documentElement.dataset.theme = nextTheme;
+            try { localStorage.setItem("daniel-theme", nextTheme); } catch (error) {}
+            syncThemeToggle();
+          });
+        }
+
+        var copy = document.getElementById("copybtn");
+        if (copy) {
+          copy.addEventListener("click", async function () {
+            copy.textContent = "Copying";
+            try {
+              var copied = false;
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                try {
+                  await Promise.race([
+                    navigator.clipboard.writeText(copy.dataset.mail),
+                    new Promise(function (_, reject) {
+                      setTimeout(function () { reject(new Error("Clipboard timeout")); }, 800);
+                    })
+                  ]);
+                  copied = true;
+                } catch (error) {
+                  copied = false;
+                }
+              }
+              if (!copied) {
+                var input = document.createElement("textarea");
+                input.value = copy.dataset.mail;
+                input.setAttribute("readonly", "");
+                input.style.position = "fixed";
+                input.style.opacity = "0";
+                document.body.appendChild(input);
+                input.select();
+                copied = document.execCommand("copy");
+                input.remove();
+              }
+              if (!copied) throw new Error("Clipboard unavailable");
+              copy.textContent = "Copied";
+              setTimeout(function () { copy.textContent = "Copy"; }, 1800);
+            } catch (error) {
+              copy.textContent = "Use email link";
+              setTimeout(function () { copy.textContent = "Copy"; }, 1800);
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

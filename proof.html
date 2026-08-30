@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evidence and recognition · Daniel Sultan</title>
+    <meta
+      name="description"
+      content="Verified recognition, project status, testing evidence and public feedback for Daniel Sultan."
+    />
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("daniel-theme");
+          var preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=9" />
+    <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800;900&amp;family=Public+Sans:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="masthead">
+      <div class="frame">
+        <a class="wordmark" href="index.html">Daniel<span class="surname">&nbsp;Sultan</span></a>
+        <nav class="mainnav" aria-label="Main">
+          <a class="nav-home" href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="proof.html" aria-current="page">Proof</a>
+          <a href="index.html#history">History</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+          <span class="theme-toggle-track" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-head frame">
+        <p class="eyebrow">Evidence · Recognition · Project status</p>
+        <h1>Evidence and recognition</h1>
+        <p>
+          Verified academic, project and testing evidence, with the stage and source shown
+          for each item.
+        </p>
+      </section>
+
+      <section class="band frame" id="recognition">
+        <div class="rule-label">
+          <h2>Academic and public recognition</h2>
+          <span class="count">Verified as of August 2026</span>
+        </div>
+
+        <div class="ledger-rows">
+          <article class="lrow">
+            <div class="lrow-when"><strong>Jun 2026</strong><span>Earned distinction</span></div>
+            <div>
+              <h3>Ontario Scholar</h3>
+              <p class="org">Ontario Secondary School Diploma</p>
+              <p class="plain">
+                Graduated as an Ontario Scholar in June 2026.
+              </p>
+              <div class="links">
+                <a class="link" href="assets/Daniel_Sultan_Resume.pdf">See it on my résumé</a>
+              </div>
+            </div>
+          </article>
+
+          <a class="lrow" href="https://github.com/itsdanielsultan/pieoneer">
+            <div class="lrow-when"><strong>Aug 2026</strong><span>Ongoing · 14 stars</span></div>
+            <div>
+              <h3>Pieoneer repository</h3>
+              <p class="org">Stage: ongoing open-source project</p>
+              <p class="plain">
+                Fourteen GitHub users had starred the repository when this test page was
+                prepared in August 2026. It is a modest public signal that people found the
+                work worth saving; the live count may change.
+              </p>
+              <span class="link">Check the repository</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="feature" id="cire-proof">
+        <div class="frame feature-inner">
+          <div>
+            <p class="eyebrow">Stage: live public website</p>
+            <h2>InvestmentRegulation.ca</h2>
+            <div class="factline" aria-label="InvestmentRegulation.ca scope">
+              <div><b>69</b><span>Lessons</span></div>
+              <div><b>100</b><span>Questions</span></div>
+              <div><b>8</b><span>Chapters</span></div>
+              <div><b>None</b><span>Accounts</span></div>
+            </div>
+            <p class="first">
+              The live study site contains 69 lessons and 100 questions across eight
+              chapters for people preparing for the Canadian Investment Regulatory Exam.
+            </p>
+            <p>
+              There is no sign-up. Bookmarks, scores and study progress stay in the user’s
+              own browser instead of being sent to an account.
+            </p>
+            <div class="links">
+              <a class="link" href="https://investmentregulation.ca">Check the live site</a>
+              <a class="link" href="https://github.com/itsdanielsultan/Daniel-CIRE">Read the source</a>
+              <a class="link" href="cire.html">How I built it</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band frame" id="testing">
+        <div class="rule-label">
+          <h2>Prototype testing</h2>
+          <span class="count">Physical prototype · Informal trials</span>
+        </div>
+
+        <div class="ledger-rows">
+          <a class="lrow" href="https://medium.com/@itsdanielsultan/i-wanted-to-build-a-game-1a72ee7dcdb5">
+            <div class="lrow-when"><strong>Jun 2026</strong><span>Prototype testing</span></div>
+            <div>
+              <h3>Synapse board testing</h3>
+              <p class="org">Stage: physical prototype · Informal classmate testing</p>
+              <p class="plain">
+                The 2×2 grid worked as a tutorial but was too easy. On 3×3 boards, peers
+                averaged 70–90% accuracy. On 4×4 boards, results ranged from roughly
+                50–70%. On a 5×5 grid, nobody got a perfect first attempt and results were
+                around half correct.
+              </p>
+              <p class="plain">
+                Players had 20–30 seconds to memorize each layout. These were informal
+                classmate trials documented in my build article, not a controlled study or
+                an independent product review.
+              </p>
+              <span class="link">Read the test notes and build process</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="band frame" id="feedback">
+        <div class="rule-label">
+          <h2>Public feedback</h2>
+          <span class="count">Website preview · August 2026</span>
+        </div>
+
+        <div class="ledger-rows">
+          <a class="lrow" href="https://www.instagram.com/itsdanielsultan/reel/DcS8ExZoKK6/">
+            <div class="lrow-when"><strong>Aug 2026</strong><span>Public comment</span></div>
+            <div>
+              <h3>Website redesign feedback</h3>
+              <p class="org">Stage: public prototype review</p>
+              <p class="plain">
+                “Looks good” — @meabdullah_ on my website-redesign reel.
+              </p>
+              <span class="link">See the comment in context</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="band frame" id="accuracy-note">
+        <div class="split">
+          <aside>Status labels</aside>
+          <div class="prose">
+            <h3>Applications and awards</h3>
+            <p>
+              Applying is different from winning. I only describe funding, acceptance,
+              fellowships or press as confirmed after the outside organization verifies the
+              result.
+            </p>
+            <p>
+              Repository stars can move and informal tests have limits, so I date changing
+              counts and link back to the original evidence.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="night">
+      <div class="frame">
+        <div class="contact-grid">
+          <div>
+            <h2>Sources and contact</h2>
+            <p>The links above go to the live projects, repositories, article and original feedback.</p>
+            <div class="mailrow">
+              <a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a>
+            </div>
+          </div>
+          <div class="directory">
+            <a href="portfolio.html"><span>Portfolio</span><span>Projects and build notes</span><span>→</span></a>
+            <a href="index.html#history"><span>History</span><span>Work and education</span><span>→</span></a>
+            <a href="https://github.com/itsdanielsultan"><span>GitHub</span><span>@itsdanielsultan</span><span>↗</span></a>
+            <a href="contact.html"><span>Contact</span><span>Ways to reach me</span><span>→</span></a>
+            <a href="index.html"><span>Home</span><span>Back to the start</span><span>→</span></a>
+          </div>
+        </div>
+        <div class="colophon"><span>© 2026 Daniel Sultan</span><span>Evidence checked August 2026</span></div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var themeToggle = document.getElementById("theme-toggle");
+        if (!themeToggle) return;
+
+        var syncThemeToggle = function () {
+          var isDark = document.documentElement.dataset.theme === "dark";
+          themeToggle.setAttribute("aria-pressed", String(isDark));
+          themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+        };
+
+        syncThemeToggle();
+        themeToggle.addEventListener("click", function () {
+          var nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+          document.documentElement.dataset.theme = nextTheme;
+          try { localStorage.setItem("daniel-theme", nextTheme); } catch (error) {}
+          syncThemeToggle();
+        });
+      })();
+    </script>
+  </body>
+</html>

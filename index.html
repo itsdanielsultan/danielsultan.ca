@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Sultan</title>
-    <meta name="description" content="Daniel Sultan built investmentregulation.ca, a free course for the CIRE exam. Greater Toronto Area." />
+    <meta name="description" content="Daniel Sultan makes websites, learning tools and practical projects, including investmentregulation.ca." />
     <meta property="og:title" content="Daniel Sultan" />
-    <meta property="og:description" content="I built investmentregulation.ca, a free course for the exam you need to work in Canadian financial sales." />
+    <meta property="og:description" content="I make websites, learning tools and practical projects, including investmentregulation.ca." />
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://danielsultan.ca/" />
     <meta property="og:image" content="https://danielsultan.ca/assets/daniel-sultan-social-card.png?v=1" />
@@ -26,23 +26,25 @@
         }
       })();
     </script>
-    <link rel="stylesheet" href="styles.css?v=7" />
+    <link rel="stylesheet" href="styles.css?v=9" />
     <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800;900&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="home">
     <a class="skip" href="#cire">Skip to the main project</a>
 
     <header class="masthead">
       <div class="frame">
         <a class="wordmark" href="index.html">Daniel<span class="surname">&nbsp;Sultan</span></a>
         <nav class="mainnav" aria-label="Main">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="cire.html" aria-label="investmentregulation.ca"><span class="nav-long">investmentregulation.ca</span><span class="nav-short" aria-hidden="true">CIRE</span></a>
-          <a href="mailto:thedanielsultan@gmail.com">Email</a>
+          <a class="nav-home" href="index.html" aria-current="page">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="proof.html">Proof</a>
+          <a href="#history" aria-label="Work history">History</a>
+          <a href="contact.html">Contact</a>
         </nav>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
           <span class="theme-toggle-track" aria-hidden="true"></span>
@@ -51,29 +53,19 @@
     </header>
 
     <main>
-      <section class="hero frame">
+      <section class="hero frame" aria-labelledby="intro-title">
         <div class="hero-grid">
           <div>
             <p class="eyebrow">Greater Toronto Area</p>
-            <h1 class="statement">Daniel Sultan</h1>
+            <h1 class="statement" id="intro-title">Hi, I’m Daniel.</h1>
+            <p class="hero-lead">I make websites, learning tools and practical projects.</p>
             <p class="standfirst">
-              I recently built <a href="https://investmentregulation.ca">investmentregulation.ca</a>
-              over three weeks. It’s a free, open-source course designed to help people prepare
-              for the exam required to work in Canadian investment sales.
-            </p>
-            <p class="standfirst">
-              The official material is spread across three PDFs and can have a pretty steep
-              learning curve, so I rebuilt the course from the ground up. It starts with the basics,
-              beginning with “What Is Investing?”, and works through 69 lessons, along with
-              flashcards and a full mock exam. The goal is to make the material easier to understand,
-              easier to remember, and much faster to work through.
-            </p>
-            <p class="standfirst">
-              Try it out and let me know what you think.
+              My main project is <a class="text-link" href="https://investmentregulation.ca">InvestmentRegulation.ca</a>,
+              a free study website for people preparing for the Canadian Investment Regulatory Exam.
             </p>
             <div class="actions">
-              <a class="btn btn-solid" href="https://investmentregulation.ca">Open the site</a>
-              <a class="btn btn-ghost" href="mailto:thedanielsultan@gmail.com">Email me</a>
+              <a class="btn btn-solid" href="https://investmentregulation.ca">Try the study site</a>
+              <a class="btn btn-ghost" href="portfolio.html">See my work</a>
               <a class="btn btn-ghost" href="assets/Daniel_Sultan_Resume.pdf">Resume PDF</a>
             </div>
           </div>
@@ -81,7 +73,7 @@
           <figure class="plate">
             <dl>
               <dt>Based</dt><dd>Greater Toronto Area</dd>
-              <dt>Email</dt><dd><a href="mailto:thedanielsultan@gmail.com">thedanielsultan<br />@gmail.com</a></dd>
+              <dt>Main</dt><dd><a href="https://investmentregulation.ca">InvestmentRegulation.ca</a></dd>
               <dt>Next</dt><dd>Studying computer<br />science</dd>
             </dl>
             <img src="assets/daniel-sultan-portrait.png" alt="Daniel Sultan" />
@@ -90,104 +82,10 @@
         </div>
       </section>
 
-      <!-- ============ CAREER HISTORY ============ -->
-      <section class="band frame" id="history">
-        <div class="rule-label">
-          <h2>Career history</h2>
-          <span class="count">Most recent first</span>
-        </div>
-
-        <div class="ledger-rows">
-          <article class="lrow">
-            <div class="lrow-when"><strong>Jul 2026 to </strong><span>Now</span></div>
-            <div>
-              <h3>Neo Financial</h3>
-              <p class="org">Financial Sales Specialist</p>
-              <ul>
-                <li>Represent Neo's digital banking and credit products in high-traffic retail environments.</li>
-                <li>Guide customers through product selection and digital onboarding while following security, compliance, and responsible-sales requirements.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="lrow">
-            <div class="lrow-when"><strong>Jul 2026 to </strong><span>Now</span></div>
-            <div>
-              <h3>Tim Hortons</h3>
-              <p class="org">Team Member | Guest Service · Baker | Production Operations</p>
-              <ul>
-                <li>Deliver fast, accurate guest service and prepare coffee and specialty beverages during high-volume shifts.</li>
-                <li>Plan timed production batches, monitor inventory, and maintain food-safety, sanitation, rotation, and presentation standards.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="lrow">
-            <div class="lrow-when"><strong>Jul 2025 to </strong><span>Sep 2025</span></div>
-            <div>
-              <h3>Private Youth Camp</h3>
-              <p class="org">Youth Camp Leader · Seasonal</p>
-              <ul>
-                <li>Led games and group activities for children and families in an energetic, welcoming environment.</li>
-                <li>Managed setup, cleanup, equipment, activity transitions, and participant safety.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="lrow">
-            <div class="lrow-when"><strong>Aug 2022 to </strong><span>Jun 2025</span></div>
-            <div>
-              <h3>SportStars Youth Soccer Club</h3>
-              <p class="org">Youth Soccer Coach · Contract part-time</p>
-              <ul>
-                <li>Planned and led structured soccer and multi-sport sessions using clear, age-appropriate drills.</li>
-                <li>Supervised safety and behaviour, organized equipment, and communicated with children, families, and program staff.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="lrow">
-            <div class="lrow-when"><strong>Jul 2024 to </strong><span>Sep 2024</span></div>
-            <div>
-              <h3>Bethany Baptist Church</h3>
-              <p class="org">Summer Camp Counsellor · Seasonal</p>
-              <ul>
-                <li>Led daily recreational and educational activities in a safe, organized, and welcoming camp environment.</li>
-                <li>Managed routines, attendance, safety checks, activity transitions, and conflict resolution.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="lrow">
-            <div class="lrow-when"><strong>Feb 2024 to </strong><span>Jun 2024</span></div>
-            <div>
-              <h3>Canadian Tire Corporation</h3>
-              <p class="org">Retail Associate</p>
-              <ul>
-                <li>Helped customers identify suitable products by asking questions, explaining options, and making practical recommendations.</li>
-                <li>Processed payments and returns while supporting merchandising, stocking, and safe floor operations.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="lrow">
-            <div class="lrow-when"><strong>Sep 2022 to </strong><span>Jun 2024</span></div>
-            <div>
-              <h3>Self-employed</h3>
-              <p class="org">Informal Tutor</p>
-              <ul>
-                <li>Provided paid, one-on-one academic support using clear, step-by-step guidance tailored to each student.</li>
-                <li>Helped students organize their work, strengthen study habits, and approach difficult concepts with confidence.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
       <section class="feature" id="cire">
         <div class="frame feature-inner">
           <div>
-            <p class="eyebrow">The main project · August 2026</p>
+            <p class="eyebrow">Current work · August 2026</p>
             <h2>investmentregulation.ca</h2>
             <div class="factline">
               <div><b>69</b><span>Lessons</span></div>
@@ -196,20 +94,17 @@
               <div><b>3</b><span>Weeks</span></div>
             </div>
             <p class="first">
-              The CIRE is the exam you need to pass to move up in financial sales in
-              Canada. I'm taking it, and the material you're given to study from is three
-              PDF documents that list what you're expected to know without ever explaining
-              any of it.
+              I built this because the official CIRE material tells you what to know, but
+              does not teach it from the beginning.
             </p>
             <p>
-              So I wrote a course that starts at "what is investing" and gets you to the
-              exam. Along the way there are flashcards that come back more often when you
-              get them wrong, a drill mode with no timer, a timed round, and a full mock
-              exam you can review afterwards.
+              The site turns the syllabus into 69 plain-language lessons, flashcards, practice
+              rounds and a full mock exam. It starts with “What is investing?” and works up
+              to the material people are expected to know for the exam.
             </p>
             <p>
-              Nothing you do on it gets sent anywhere. Your progress is saved in your own
-              browser, there's no account, and there's nothing to pay.
+              It is free and open source. There is no account, and study progress stays in
+              the person’s own browser.
             </p>
             <div class="links">
               <a class="link" href="https://investmentregulation.ca">Open the site</a>
@@ -217,22 +112,63 @@
               <a class="link" href="https://medium.com/@itsdanielsultan/introducing-investmentregulation-ca-659e3e421be0">The launch post</a>
             </div>
           </div>
+          <figure class="feature-media">
+            <img src="assets/work/cire-home.png" alt="InvestmentRegulation.ca lesson page" />
+            <figcaption>The study site, shown on its home page.</figcaption>
+          </figure>
         </div>
       </section>
 
-      <!-- ============ EVERYTHING ELSE ============ -->
-      <section class="band frame" id="other">
+      <section class="band frame" id="proof-summary">
         <div class="rule-label">
-          <h2>Other things I've made</h2>
-          <span class="count">Selected projects</span>
+          <h2>Evidence and recognition</h2>
+          <span class="count">Sources linked</span>
+        </div>
+
+        <div class="proof-grid" aria-label="Selected evidence">
+          <article class="proof-item">
+            <p class="proof-value">69 · 100 · 8</p>
+            <h3>InvestmentRegulation.ca</h3>
+            <p>Stage: live public website. It contains 69 lessons, 100 questions and eight chapters.</p>
+            <a class="link" href="https://investmentregulation.ca">Check the site</a>
+          </article>
+          <article class="proof-item">
+            <p class="proof-value">14</p>
+            <h3>Pieoneer repository</h3>
+            <p>Stage: ongoing open-source project. The repository had 14 stars in August 2026.</p>
+            <a class="link" href="https://github.com/itsdanielsultan/pieoneer">Check the repository</a>
+          </article>
+          <article class="proof-item">
+            <p class="proof-value">Jun 2026</p>
+            <h3>Ontario Scholar</h3>
+            <p>Stage: earned academic distinction with my Ontario secondary-school diploma.</p>
+            <a class="link" href="assets/Daniel_Sultan_Resume.pdf">See my résumé</a>
+          </article>
+        </div>
+
+        <a class="feedback-note" href="https://www.instagram.com/itsdanielsultan/reel/DcS8ExZoKK6/">
+          <span class="feedback-label">Public feedback</span>
+          <blockquote>“Looks good.”</blockquote>
+          <span class="feedback-source">@meabdullah_ on my August 2026 website-redesign reel&nbsp; ↗</span>
+        </a>
+
+        <div class="section-link">
+          <a class="btn btn-ghost" href="proof.html">See the evidence</a>
+        </div>
+      </section>
+
+      <section class="band frame" id="projects">
+        <div class="rule-label">
+          <h2>Selected projects</h2>
+          <span class="count">Four documented projects</span>
         </div>
 
         <div class="ledger-rows">
-          <a class="lrow" href="https://medium.com/@itsdanielsultan/i-wanted-to-build-a-game-1a72ee7dcdb5">
-            <div class="lrow-when"><strong>2026</strong><span>Object</span></div>
+          <a class="lrow lrow--media" href="https://medium.com/@itsdanielsultan/i-wanted-to-build-a-game-1a72ee7dcdb5">
+            <div class="lrow-when"><strong>Jun 2026</strong><span>Physical prototype</span></div>
             <div>
-              <h3>A memory game called Synapse</h3>
-              <p class="org">Board, tiles, two players, no screen</p>
+              <h3>Synapse memory-game prototype</h3>
+              <p class="org">Stage: physical prototype · Informal classmate testing</p>
               <p class="plain">
                 One person lays out a pattern of shapes on a board. The other person looks
                 at it, the board gets covered, and they try to put it back the same way.
@@ -245,13 +181,17 @@
               </p>
               <span class="link">Read how I made it</span>
             </div>
+            <figure class="lrow-media">
+              <img src="assets/work/synapse.png" alt="The Synapse memory game board and pieces" loading="lazy" />
+              <figcaption>Synapse, built by hand.</figcaption>
+            </figure>
           </a>
 
-          <a class="lrow" href="https://itsdanielsultan.github.io/Physics-Website/">
-            <div class="lrow-when"><strong>Jun 2026</strong><span>School project</span></div>
+          <a class="lrow lrow--media" href="https://itsdanielsultan.github.io/Physics-Website/">
+            <div class="lrow-when"><strong>Jun 2026</strong><span>Completed school project</span></div>
             <div>
-              <h3>A crane that picks things up with a magnet</h3>
-              <p class="org">itsdanielsultan.github.io/Physics-Website</p>
+              <h3>Electromagnetic physics demonstration</h3>
+              <p class="org">Stage: completed · Working crane, experiment and project website</p>
               <p class="plain">
                 If you wrap wire around a piece of metal and run electricity through it, the
                 metal turns into a magnet. Turn the electricity off and whatever it was
@@ -264,13 +204,17 @@
               </p>
               <span class="link">Look at the project</span>
             </div>
+            <figure class="lrow-media">
+              <img src="assets/work/crane.png" alt="Daniel's electromagnetic crane project website" loading="lazy" />
+              <figcaption>The experiment and its results.</figcaption>
+            </figure>
           </a>
 
-          <a class="lrow" href="https://github.com/raycast/extensions/pull/25100">
-            <div class="lrow-when"><strong>Feb 2026</strong><span>Code</span></div>
+          <a class="lrow lrow--media" href="https://github.com/raycast/extensions/pull/25100">
+            <div class="lrow-when"><strong>Feb 2026</strong><span>Submitted · Not merged</span></div>
             <div>
-              <h3>A shortcut between two apps I use</h3>
-              <p class="org">github.com/raycast/extensions/pull/25100</p>
+              <h3>Free, open-source Craft Capture extension</h3>
+              <p class="org">Stage: submitted to Raycast · Automatically closed without merge</p>
               <p class="plain">
                 Raycast lets you run things on a Mac by typing instead of clicking. Craft is
                 where I keep my notes. There was no way to send a task from one to the
@@ -283,13 +227,17 @@
               </p>
               <span class="link">Read the code</span>
             </div>
+            <figure class="lrow-media">
+              <img src="assets/work/raycast-craft.png" alt="The Raycast to Craft extension interface" loading="lazy" />
+              <figcaption>The extension running in Raycast.</figcaption>
+            </figure>
           </a>
 
-          <a class="lrow" href="https://github.com/itsdanielsultan/pieoneer">
-            <div class="lrow-when"><strong>Ongoing</strong><span>Code</span></div>
+          <a class="lrow lrow--media" href="https://github.com/itsdanielsultan/pieoneer">
+            <div class="lrow-when"><strong>Aug 2026</strong><span>Ongoing open source</span></div>
             <div>
-              <h3>Shortcuts for the apps I use most</h3>
-              <p class="org">github.com/itsdanielsultan/pieoneer</p>
+              <h3>Pieoneer shortcut collection</h3>
+              <p class="org">Stage: ongoing open-source project</p>
               <p class="plain">
                 You hold down a key and a wheel of options appears around your cursor. I put
                 together a set for the Mac apps I'm in every day and put it online.
@@ -297,20 +245,215 @@
               </p>
               <span class="link">Open it on GitHub</span>
             </div>
+            <figure class="lrow-media">
+              <img src="assets/work/pieoneer.png" alt="A Pieoneer shortcut wheel for Mac apps" loading="lazy" />
+              <figcaption>One of the shortcut wheels.</figcaption>
+            </figure>
           </a>
         </div>
       </section>
 
-      <!-- ============ WRITING ============ -->
-
-      <section class="band-tight frame">
+      <section class="band frame" id="community">
         <div class="rule-label">
-          <h2>Certificates</h2>
-          <span class="count">Current</span>
+          <h2>Teaching and community</h2>
+          <span class="count">Youth programs and tutoring</span>
         </div>
-        <div class="pairs" style="margin-top:6px">
+
+        <div class="ledger-rows">
+          <article class="lrow">
+            <div class="lrow-when"><strong>Aug 2022–Jun 2025</strong><span>Completed · Contract</span></div>
+            <div>
+              <h3>SportStars Youth Soccer Club</h3>
+              <p class="org">Youth Soccer Coach · Contract part-time</p>
+              <ul>
+                <li>Planned and led soccer and multi-sport sessions using clear, age-appropriate drills.</li>
+                <li>Supervised safety and behaviour and communicated with children, families and program staff.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="lrow">
+            <div class="lrow-when"><strong>Jul–Sep 2025</strong><span>Completed · Seasonal</span></div>
+            <div>
+              <h3>Private Youth Camp</h3>
+              <p class="org">Youth Camp Leader · Seasonal</p>
+              <ul>
+                <li>Led games and group activities for children and families.</li>
+                <li>Managed equipment, activity changes and participant safety.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="lrow">
+            <div class="lrow-when"><strong>Jul–Sep 2024</strong><span>Completed · Seasonal</span></div>
+            <div>
+              <h3>Bethany Baptist Church</h3>
+              <p class="org">Summer Camp Counsellor · Seasonal</p>
+              <ul>
+                <li>Led daily recreational and educational activities in a safe, organized camp.</li>
+                <li>Managed routines, attendance, activity changes and conflict resolution.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="lrow">
+            <div class="lrow-when"><strong>Sep 2022–Jun 2024</strong><span>Completed</span></div>
+            <div>
+              <h3>One-on-one tutoring</h3>
+              <p class="org">Self-employed · Informal Tutor</p>
+              <ul>
+                <li>Explained schoolwork step by step and adapted the approach to each student.</li>
+                <li>Helped students organize their work and build stronger study habits.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band frame no-print" id="writing">
+        <div class="rule-label">
+          <h2>Writing and build notes</h2>
+          <span class="count">Public pages</span>
+        </div>
+
+        <div class="ledger-rows">
+          <a class="lrow lrow--compact" href="cire.html">
+            <div class="lrow-when"><strong>2026</strong><span>Case study</span></div>
+            <div>
+              <h3>How I built my CIRE course</h3>
+              <p class="plain">The decisions, testing and rewrites behind InvestmentRegulation.ca.</p>
+              <span class="link">Read the case study</span>
+            </div>
+          </a>
+
+          <a class="lrow lrow--compact" href="https://medium.com/@itsdanielsultan/introducing-investmentregulation-ca-659e3e421be0">
+            <div class="lrow-when"><strong>2026</strong><span>Launch note</span></div>
+            <div>
+              <h3>Introducing InvestmentRegulation.ca</h3>
+              <p class="plain">A short explanation of why I made the study site and what is inside it.</p>
+              <span class="link">Read on Medium</span>
+            </div>
+          </a>
+
+          <a class="lrow lrow--compact" href="https://medium.com/@itsdanielsultan/i-wanted-to-build-a-game-1a72ee7dcdb5">
+            <div class="lrow-when"><strong>2026</strong><span>Build note</span></div>
+            <div>
+              <h3>I wanted to build a game</h3>
+              <p class="plain">How Synapse changed from an idea into a physical memory game.</p>
+              <span class="link">Read on Medium</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="belief-band" id="belief">
+        <div class="frame belief-inner">
+          <p class="eyebrow">What I believe</p>
+          <p class="belief-statement">If work is meant to help people, they should be able to understand it and inspect how it works.</p>
+        </div>
+      </section>
+
+      <section class="band-tight frame" id="training">
+        <div class="rule-label">
+          <h2>Training and credentials</h2>
+          <span class="count">Verified certificates</span>
+        </div>
+        <div class="pairs">
           <div class="pair"><b>Standard First Aid and CPR/AED Level C</b><span>Red Cross · 2024</span></div>
           <div class="pair"><b>Principles of Healthy Child Development</b><span>HIGH FIVE · 2025</span></div>
+        </div>
+      </section>
+
+      <section class="band frame" id="history">
+        <div class="rule-label">
+          <h2>Employment history</h2>
+          <span class="count">Seven roles · Current and completed</span>
+        </div>
+
+        <div class="ledger-rows">
+          <article class="lrow">
+            <div class="lrow-when"><strong>Jul 2026–present</strong><span>Current</span></div>
+            <div>
+              <h3>Neo Financial</h3>
+              <p class="org">Financial Sales Specialist</p>
+              <ul>
+                <li>Represent Neo’s digital banking and credit products in high-traffic retail environments.</li>
+                <li>Guide customers through product selection and digital onboarding while following security, compliance and responsible-sales requirements.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="lrow">
+            <div class="lrow-when"><strong>Jul 2026–present</strong><span>Current</span></div>
+            <div>
+              <h3>Tim Hortons</h3>
+              <p class="org">Team Member | Guest Service · Baker | Production Operations</p>
+              <ul>
+                <li>Deliver fast, accurate guest service and prepare coffee and specialty beverages during high-volume shifts.</li>
+                <li>Plan timed production batches, monitor inventory, and maintain food-safety, sanitation, rotation, and presentation standards.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="lrow">
+            <div class="lrow-when"><strong>Jul–Sep 2025</strong><span>Completed · Seasonal</span></div>
+            <div>
+              <h3>Private Youth Camp</h3>
+              <p class="org">Youth Camp Leader · Seasonal</p>
+              <ul>
+                <li>Led games and group activities for children and families in an energetic, welcoming environment.</li>
+                <li>Managed setup, cleanup, equipment, activity transitions, and participant safety.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="lrow">
+            <div class="lrow-when"><strong>Aug 2022–Jun 2025</strong><span>Completed · Contract</span></div>
+            <div>
+              <h3>SportStars Youth Soccer Club</h3>
+              <p class="org">Youth Soccer Coach · Contract part-time</p>
+              <ul>
+                <li>Planned and led structured soccer and multi-sport sessions using clear, age-appropriate drills.</li>
+                <li>Supervised safety and behaviour, organized equipment, and communicated with children, families, and program staff.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="lrow">
+            <div class="lrow-when"><strong>Jul–Sep 2024</strong><span>Completed · Seasonal</span></div>
+            <div>
+              <h3>Bethany Baptist Church</h3>
+              <p class="org">Summer Camp Counsellor · Seasonal</p>
+              <ul>
+                <li>Led daily recreational and educational activities in a safe, organized, and welcoming camp environment.</li>
+                <li>Managed routines, attendance, safety checks, activity transitions, and conflict resolution.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="lrow">
+            <div class="lrow-when"><strong>Feb–Jun 2024</strong><span>Completed</span></div>
+            <div>
+              <h3>Canadian Tire Corporation</h3>
+              <p class="org">Retail Associate</p>
+              <ul>
+                <li>Helped customers identify suitable products by asking questions, explaining options, and making practical recommendations.</li>
+                <li>Processed payments and returns while supporting merchandising, stocking, and safe floor operations.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="lrow">
+            <div class="lrow-when"><strong>Sep 2022–Jun 2024</strong><span>Completed</span></div>
+            <div>
+              <h3>Self-employed</h3>
+              <p class="org">Informal Tutor</p>
+              <ul>
+                <li>Provided paid, one-on-one academic support using clear, step-by-step guidance tailored to each student.</li>
+                <li>Helped students organize their work, strengthen study habits, and approach difficult concepts with confidence.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
     </main>
@@ -320,7 +463,7 @@
         <div class="contact-grid">
           <div>
             <h2>Get in touch.</h2>
-            <p>I’d love to hear from you, so send me an email. I usually reply within a few hours and always within two days.</p>
+            <p>I’d love to hear from you. Send me an email about a project, idea or opportunity.</p>
             <div class="mailrow">
               <a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a>
               <button class="copybtn no-print" type="button" id="copybtn" data-mail="thedanielsultan@gmail.com">Copy</button>

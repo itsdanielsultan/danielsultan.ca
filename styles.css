@@ -786,6 +786,7 @@ a.lane:hover { background: var(--stock-edge); }
   background: #fff;
 }
 .identity-mark img { width: 100%; height: 100%; object-fit: contain; }
+.identity-mark--bethany { flex-basis: 104px; width: 104px; background: #1d1d1b; border-color: #3d3d39; }
 .identity-mark--symbol { background: var(--stock-edge); border-color: var(--rule-hair); padding: 13px; }
 .identity-mark--symbol img { opacity: .72; }
 :root[data-theme="dark"] .identity-mark--symbol img { filter: invert(1); opacity: .85; }
@@ -805,6 +806,7 @@ a.lane:hover { background: var(--stock-edge); }
 @media (max-width: 720px) {
   .identity-heading { gap: 13px; align-items: flex-start; }
   .identity-mark { flex-basis: 48px; width: 48px; height: 48px; padding: 6px; }
+  .identity-mark--bethany { flex-basis: 88px; width: 88px; }
   .identity-mark--symbol { padding: 11px; }
   .credential-list { grid-template-columns: minmax(0, 1fr); }
 }

@@ -26,6 +26,22 @@ invented.
   not an organizational accreditation badge.
   Original: https://static.wixstatic.com/media/50cfa2_f252c4b1522345a1aff82b42d37864a9~mv2.png
 
+## Church and provincial marks
+
+- `bethany-baptist.png` (358 × 144): Bethany Baptist Church's original white
+  wordmark and blue wave, from the church website supplied by Daniel:
+  https://www.bethanybaptist.bc.ca/
+  Original: https://www.bethanybaptist.bc.ca/graphics/sb_bethanybaptist/sprites_logo@2x.png?v=20220519
+  Artwork and proportions are unchanged. The site displays it on a dark backing
+  like the original church header, with extra width to keep the wordmark legible.
+- `ontario-arms.png` (160 × 160): Ontario's coat of arms from Canadian Heritage,
+  resized proportionally on a white background. This identifies the province
+  associated with Ontario Scholar, not a separate Scholar logo, personalized
+  certificate or claim of government endorsement. No asset-specific open licence
+  is asserted.
+  Source: https://www.canada.ca/en/canadian-heritage/services/provincial-territorial-symbols-canada/ontario.html
+  Original: https://www.canada.ca/content/dam/pch/images/services/provincial-territorial-symbols-canada/ontario/armoiries_ontario-ontario_arms.jpg
+
 ## Activity icons (96 × 96 PNG)
 
 `tent-tree`, `book-open`, `users-round`, `heart-pulse`, `award`, `graduation-cap`

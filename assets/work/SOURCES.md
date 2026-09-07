@@ -4,12 +4,12 @@ These are original project photographs published by Daniel Sultan, plus a screen
 
 ## Synapse board
 
-- File: `synapse-board.webp` (960 × 720)
+- File: `synapse-board-top-down.webp` (960 × 720)
 - Author: Daniel Sultan
 - Published in: https://medium.com/@itsdanielsultan/i-wanted-to-build-a-game-1a72ee7dcdb5
-- Original image: https://cdn-images-1.medium.com/max/1024/1*iaNHrxiDph5Qt7hMuFVfXQ.png
+- Original image: https://cdn-images-1.medium.com/max/1024/1*HSI2tSXRMS6mGouAIvv3EA.png
 - Retrieved September 6, 2026 through the public author feed, https://medium.com/feed/@itsdanielsultan
-- Preparation: resized and compressed; original composition retained.
+- Preparation: top-down photograph selected, resized and compressed; original composition retained. The previous angled `synapse-board.webp` image is no longer referenced by the pages.
 
 ## Electromagnetic crane
 

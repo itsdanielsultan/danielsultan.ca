@@ -1,30 +1,31 @@
 /* ============================================================
    Daniel Sultan, digital resume
-   Design system: "Timetable". Recycled stock, one spot colour,
-   dense dated rows, civic typography. Prints as a real resume.
+   Shared visual language with Future Mississauga: soft paper,
+   blue-black ink, Manrope and DM Sans, quiet rules and real images.
    ============================================================ */
 
 :root {
-  --stock:      #f4f2ec;
-  --stock-deep: #e6e3d9;
-  --stock-edge: #fbfaf6;
-  --ink:        #17181a;
-  --ink-soft:   #4c4e52;
-  --ink-faint:  #6b6d70;
-  --rule:       #d3cfc4;
-  --rule-hair:  #e0dccf;
-  --signal:     #c8241c;
+  --stock:      #f8f8f3;
+  --stock-deep: #e9eee5;
+  --stock-edge: #f0f1ea;
+  --ink:        #192b31;
+  --ink-soft:   #516267;
+  --ink-faint:  #627074;
+  --rule:       #c5cec7;
+  --rule-hair:  #dadfd7;
+  --signal:     #965261;
+  --rose:       #c47d88;
 
-  --night:      #17181a;
-  --night-ink:  #e4e2dc;
-  --night-rule: #34363a;
+  --night:      #192b31;
+  --night-ink:  #f0f3eb;
+  --night-rule: #42555b;
 
-  --display: "Darker Grotesque", "Haettenschweiler", "Arial Narrow", sans-serif;
-  --body:    "Public Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --data:    "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --body:    "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --data:    "DM Sans", ui-sans-serif, system-ui, sans-serif;
 
   --gutter: clamp(18px, 4vw, 56px);
-  --max: 1240px;
+  --max: 1392px;
 
   --space-1: 4px;
   --space-2: 8px;
@@ -38,18 +39,19 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --stock:      #121315;
-  --stock-deep: #25272b;
-  --stock-edge: #1a1c1f;
-  --ink:        #f2f0e9;
-  --ink-soft:   #c2c0b9;
-  --ink-faint:  #91928f;
-  --rule:       #3d3f43;
-  --rule-hair:  #2d2f33;
-  --signal:     #ff6258;
-  --night:      #0b0c0d;
-  --night-ink:  #e8e6df;
-  --night-rule: #303238;
+  --stock:      #142329;
+  --stock-deep: #2b3e43;
+  --stock-edge: #1b2e34;
+  --ink:        #f2f4ed;
+  --ink-soft:   #c1cdca;
+  --ink-faint:  #a6b8b4;
+  --rule:       #465d61;
+  --rule-hair:  #354b50;
+  --signal:     #e6a8b3;
+  --rose:       #dba0ad;
+  --night:      #101c21;
+  --night-ink:  #edf2eb;
+  --night-rule: #354b50;
 }
 
 * { box-sizing: border-box; }

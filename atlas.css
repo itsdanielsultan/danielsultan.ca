@@ -1,0 +1,104 @@
+/* September 2026: Future Mississauga visual language, shared by every page.
+   Structure, content, theme persistence and the mobile menu remain intact. */
+@media screen {
+  .masthead { border-bottom: 1px solid var(--rule-hair); }
+  .masthead .frame { min-height: 88px; }
+  .wordmark { font-size: 13px; font-weight: 700; letter-spacing: .13em; }
+  .mainnav { gap: clamp(18px, 2.5vw, 34px); }
+  .mainnav a { font-size: 14px; letter-spacing: 0; text-transform: none; padding-block: 9px; }
+  .mainnav a[aria-current="page"] { border-bottom-color: var(--rose); }
+  .nav-toggle { border: 1px solid var(--rule); border-radius: 3px; }
+  .eyebrow { color: var(--ink-soft); font-weight: 700; font-size: 11px; letter-spacing: .16em; }
+  .statement, .page-head h1 { font-weight: 500; line-height: 1.06; letter-spacing: -.035em; word-spacing: .04em; }
+  .page-head .eyebrow { font-size: 11px; letter-spacing: .16em; margin-bottom: 18px; }
+  .page-head h1 { font-size: clamp(40px, 5.5vw, 72px); max-width: 21ch; margin-bottom: 24px; }
+  .page-head { padding-top: clamp(40px, 5.5vw, 74px); }
+  .btn { font: 500 14px/1.4 var(--body); text-transform: none; letter-spacing: 0; border-width: 1px; border-radius: 2px; padding: 13px 19px; }
+  .btn-solid:hover { color: var(--stock); background: var(--ink-soft); border-color: var(--ink-soft); }
+  .link { font-size: 13px; text-transform: none; letter-spacing: 0; border-bottom: 1px solid var(--rule); padding-block: 4px; }
+  .link:hover, .text-link:hover { border-color: var(--signal); }
+  .text-link { border-bottom: 1px solid var(--rose); }
+  .links { gap: 10px 22px; margin-top: 20px; }
+  .rule-label { border-bottom: 1px solid var(--rule); padding-bottom: 17px; align-items: center; }
+  .rule-label h2 { font: 500 clamp(22px, 2.4vw, 30px)/1.3 var(--display); letter-spacing: -.025em; text-transform: none; }
+  .rule-label .count { font-size: 12px; letter-spacing: .015em; }
+  .lrow { padding-block: 32px; }
+  .lrow h3, .home .lrow h3 { font-size: clamp(22px, 2.5vw, 30px); font-weight: 600; line-height: 1.25; letter-spacing: -.025em; margin-bottom: 10px; }
+  .lrow .org { font-size: 12px; text-transform: none; letter-spacing: .01em; line-height: 1.6; }
+  .lrow-when { font-size: 11px; letter-spacing: .05em; }
+  .lrow p.plain, .lrow ul li { line-height: 1.7; }
+  a.lrow:hover, a.lrow:focus-visible, a.lrow:active, a.lane:hover { transform: none; }
+  a.lrow:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+  .feature { border-block: 1px solid var(--rule-hair); background: var(--stock-edge); }
+  .feature-inner { padding-block: clamp(40px, 5vw, 72px); }
+  .feature h2 { font-weight: 500; font-size: clamp(27px, 3.2vw, 42px); line-height: 1.2; letter-spacing: -.035em; }
+  .feature p { line-height: 1.7; }
+  .factline { padding-block: 16px; margin-block: 22px; }
+  .factline b { font-weight: 500; line-height: 1.3; }
+  .factline span { font-size: 11px; }
+  .project-photo img { border: 0; border-radius: 3px; }
+  .project-photo figcaption { font-size: 12px; }
+  .proof-grid { gap: 32px; border: 0; background: none; }
+  .proof-item { padding: 24px 0 8px; background: none; border-top: 1px solid var(--rule); }
+  .proof-item .proof-value { font-size: clamp(25px, 3vw, 38px); font-weight: 500; line-height: 1.2; }
+  .proof-item h3 { font-size: 21px; font-weight: 600; line-height: 1.3; }
+  .feedback-note { border: 1px solid var(--rule-hair); padding: 24px; }
+  .feedback-note blockquote { font-size: 25px; font-weight: 500; line-height: 1.25; }
+  .prose h2, .prose h3, .history-summary h3, .lane h3 { font-weight: 600; line-height: 1.25; font-size: clamp(23px, 2.5vw, 30px); }
+  .belief-band, .lanes-band { border-block: 1px solid var(--rule-hair); }
+  .belief-statement { font-weight: 500; line-height: 1.15; font-size: clamp(30px, 4vw, 52px); }
+  .night h2 { font-weight: 500; line-height: 1.15; font-size: clamp(32px, 4vw, 48px); }
+  .night p, .copybtn { color: #c1cdca; }
+  .directory a { grid-template-columns: 112px minmax(0, 1fr) auto; font-size: 13px; letter-spacing: 0; }
+  .directory a span:first-child, .directory a span:last-child, .colophon { color: #b0bfba; }
+  .directory a:hover { padding-left: 0; }
+  .mailrow a.mail { font-size: clamp(15px, 1.8vw, 22px); }
+  .callout { border: 1px solid var(--rule); }
+  .callout strong { font-weight: 500; line-height: 1.1; }
+  .atlas-intro { padding-block: clamp(38px, 5.5vw, 76px) 48px; }
+  .atlas-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 8vw, 112px); align-items: center; }
+  .atlas-intro .statement { font-size: clamp(58px, 6vw, 84px); margin: 20px 0 28px; }
+  .intro-person { display: flex; align-items: center; gap: 16px; }
+  .intro-person img { width: 58px; height: 58px; object-fit: cover; border-radius: 3px; }
+  .intro-person p { margin: 0; color: var(--ink-faint); font-size: 13px; line-height: 1.6; }
+  .intro-current { max-width: 485px; justify-self: end; min-width: 0; }
+  .intro-current .hero-lead { font: 500 clamp(23px, 2.25vw, 30px)/1.5 var(--body); letter-spacing: -.02em; max-width: none; margin-bottom: 22px; }
+  .intro-current .standfirst { font-size: 16px; color: var(--ink-soft); line-height: 1.7; }
+  .atlas-cover { margin: 0; }
+  .atlas-cover a { display: block; }
+  .atlas-cover img { display: block; width: 100%; height: auto; aspect-ratio: 2.2; object-fit: cover; object-position: center; border-radius: 3px; }
+  .atlas-cover figcaption { display: flex; justify-content: space-between; gap: 12px; padding-block: 16px; border-bottom: 1px solid var(--rule); color: var(--ink-faint); font-size: 12px; }
+  .atlas-cover figcaption span:first-child { color: var(--ink); }
+  .atlas-project-copy { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 7vw, 100px); padding-block: 44px 64px; }
+  .atlas-project-copy h2 { font: 500 clamp(30px, 3.5vw, 46px)/1.15 var(--display); letter-spacing: -.045em; margin: 0; }
+  .atlas-project-copy p:not(.eyebrow) { margin: 0 0 16px; max-width: 60ch; line-height: 1.7; }
+  .muted { color: var(--ink-soft); }
+  @media (max-width: 980px) {
+    .atlas-intro-grid { gap: 36px; }
+    .atlas-intro .statement { font-size: 68px; }
+    .intro-current .hero-lead { font-size: 24px; }
+    .proof-grid { gap: 22px; }
+  }
+  @media (max-width: 720px) {
+    .atlas-intro-grid, .atlas-project-copy { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+    .intro-current { justify-self: start; max-width: none; }
+    .atlas-intro .statement { font-size: clamp(54px, 11vw, 68px); }
+    .atlas-intro .statement { letter-spacing: -.035em; }
+    .atlas-cover img { aspect-ratio: 1.5; }
+    .atlas-cover figcaption { flex-direction: column; gap: 4px; font-size: 11px; }
+    .atlas-project-copy { padding-block: 32px 44px; }
+    .rule-label { align-items: start; flex-direction: column; gap: 8px; }
+    .rule-label .count { margin: 0; text-align: left; }
+    .lrow { padding-left: 0; }
+  }
+  @media (max-width: 640px) {
+    .masthead .frame { min-height: 72px; }
+    .wordmark .surname { display: inline; }
+    .wordmark { font-size: 11px; letter-spacing: .09em; }
+    .mainnav { gap: 0; }
+    .mainnav a { font-size: 15px; min-height: 46px; }
+    .atlas-intro { padding-bottom: 32px; }
+    .intro-current .hero-lead { font-size: 23px; }
+    .directory a { grid-template-columns: 86px minmax(0, 1fr) auto; gap: 10px; font-size: 12px; }
+  }
+}

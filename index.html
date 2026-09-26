@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Sultan</title>
-    <meta name="description" content="Daniel Sultan makes websites, learning tools and practical projects, including investmentregulation.ca." />
+    <meta name="description" content="Daniel Sultan is building Future Mississauga, an interactive 3D city atlas, and InvestmentRegulation.ca, a free, open-source CIRE study course." />
     <meta property="og:title" content="Daniel Sultan" />
-    <meta property="og:description" content="I make websites, learning tools and practical projects, including investmentregulation.ca." />
+    <meta property="og:description" content="Currently building Future Mississauga and InvestmentRegulation.ca. Explore my 3D city atlas, learning tools and other projects." />
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://danielsultan.ca/" />
-    <meta property="og:image" content="https://danielsultan.ca/assets/daniel-sultan-social-card.png?v=1" />
+    <meta property="og:image" content="https://danielsultan.ca/assets/daniel-sultan-projects-social-card.png?v=2" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Daniel Sultan portfolio" />
+    <meta property="og:image:alt" content="Daniel Sultan: currently building Future Mississauga and InvestmentRegulation.ca" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://danielsultan.ca/assets/daniel-sultan-social-card.png?v=1" />
+    <meta name="twitter:image" content="https://danielsultan.ca/assets/daniel-sultan-projects-social-card.png?v=2" />
     <script>
       (function () {
         document.documentElement.classList.add("js");
@@ -27,15 +27,16 @@
         }
       })();
     </script>
-    <link rel="stylesheet" href="styles.css?v=15" />
+    <link rel="stylesheet" href="styles.css?v=16" />
+    <link rel="stylesheet" href="atlas.css?v=1" />
     <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800;900&amp;family=Public+Sans:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   </head>
 
   <body class="home">
-    <a class="skip" href="#cire">Skip to the main project</a>
+    <a class="skip" href="#main">Skip to main content</a>
 
     <header class="masthead">
       <div class="frame">
@@ -54,40 +55,49 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero frame" aria-labelledby="intro-title">
-        <div class="hero-grid">
+    <main id="main">
+      <section class="atlas-intro frame" aria-labelledby="intro-title">
+        <div class="atlas-intro-grid">
           <div>
-            <p class="eyebrow">Greater Toronto Area</p>
-            <h1 class="statement" id="intro-title">Hi, I’m Daniel.</h1>
-            <p class="hero-lead">I make websites, learning tools and practical projects.</p>
-            <p class="standfirst">
-              My main project is <a class="text-link" href="https://investmentregulation.ca">InvestmentRegulation.ca</a>,
-              a free study website for people preparing for the Canadian Investment Regulatory Exam.
-            </p>
-            <div class="actions">
-              <a class="btn btn-solid" href="https://investmentregulation.ca">Try the study site</a>
-              <a class="btn btn-ghost" href="portfolio.html">See my work</a>
-              <a class="btn btn-ghost" href="assets/Daniel_Sultan_Resume.pdf">Resume PDF</a>
+            <p class="eyebrow">Daniel Sultan · Greater Toronto Area</p>
+            <h1 class="statement" id="intro-title">Hi, I’m <br />Daniel.</h1>
+            <div class="intro-person">
+              <img src="assets/daniel-sultan-portrait.png" alt="Daniel Sultan" width="72" height="72" />
+              <p>Websites, 3D models<br />and learning tools.</p>
             </div>
           </div>
+          <div class="intro-current">
+            <p class="hero-lead">Currently building <a class="text-link" href="https://futuremississauga.com/">Future Mississauga</a> and <a class="text-link" href="https://investmentregulation.ca/">InvestmentRegulation.ca</a>.</p>
+            <p class="standfirst">One lets you explore a changing city. The other helps you learn Canadian investment regulation from the beginning.</p>
+            <div class="actions">
+              <a class="btn btn-solid" href="portfolio.html">Explore my work</a>
+              <a class="btn btn-ghost" href="assets/Daniel_Sultan_Resume.pdf">Résumé PDF</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <figure class="plate">
-            <dl>
-              <dt>Based</dt><dd>Greater Toronto Area</dd>
-              <dt>Main</dt><dd><a href="https://investmentregulation.ca">InvestmentRegulation.ca</a></dd>
-              <dt>Next</dt><dd>Studying computer<br />science</dd>
-            </dl>
-            <img src="assets/daniel-sultan-portrait.png" alt="Daniel Sultan" />
-            <figcaption>Daniel Sultan, 2026</figcaption>
-          </figure>
+      <section class="atlas-project frame" id="future-mississauga" aria-labelledby="future-title">
+        <figure class="atlas-cover">
+          <a href="https://futuremississauga.com/" aria-label="Explore Future Mississauga">
+            <img src="assets/work/future-mississauga-downtown.webp" width="1600" height="1000" alt="My 3D model of Downtown Mississauga, showing existing buildings, construction and proposed development around the Hurontario corridor." fetchpriority="high" decoding="async" />
+          </a>
+          <figcaption><span>01 / Future Mississauga</span><span>Downtown · Retained development scenario</span></figcaption>
+        </figure>
+        <div class="atlas-project-copy">
+          <div><p class="eyebrow">Current project · 3D visual atlas</p><h2 id="future-title">A city taking shape.</h2></div>
+          <div>
+            <p>I taught myself Blender to see how Mississauga’s new buildings and transit fit together. Future Mississauga brings together skyline pictures, neighbourhood comparisons and an interactive 3D model.</p>
+            <p class="muted">Built with my own modelling, City data, project drawings and some downloaded models. It is an independent, ongoing project: proposed buildings are not guaranteed, and schematic or uncertain details are marked.</p>
+            <div class="links"><a class="link" href="https://futuremississauga.com/">Explore the atlas</a><a class="link" href="https://www.reddit.com/r/mississauga/comments/1wn14jq/i_made_a_3d_model_of_mississaugas_future_skyline/">The Reddit discussion</a></div>
+          </div>
         </div>
       </section>
 
       <section class="feature" id="cire">
         <div class="frame feature-inner feature-inner--illustrated">
           <div>
-            <p class="eyebrow">Current work · August 2026</p>
+            <p class="eyebrow">02 / InvestmentRegulation.ca · Free and open source</p>
             <h2>investmentregulation.ca</h2>
             <div class="factline">
               <div><b>69</b><span>Lessons</span></div>
@@ -159,10 +169,10 @@
           </article>
         </div>
 
-        <a class="feedback-note" href="https://www.instagram.com/itsdanielsultan/reel/DcS8ExZoKK6/">
-          <span class="feedback-label">Public feedback</span>
-          <blockquote>“Looks good.”</blockquote>
-          <span class="feedback-source">@meabdullah_ on my August 2026 website-redesign reel&nbsp; ↗</span>
+        <a class="feedback-note" href="https://www.reddit.com/r/mississauga/comments/1wn14jq/i_made_a_3d_model_of_mississaugas_future_skyline/">
+          <span class="feedback-label">In the community</span>
+          <blockquote>Future Mississauga</blockquote>
+          <span class="feedback-source">See the project and discussion on r/mississauga&nbsp; ↗</span>
         </a>
 
         <div class="section-link">
@@ -411,6 +421,7 @@
           </div>
 
           <div class="directory">
+            <a href="https://futuremississauga.com/"><span>City atlas</span><span>futuremississauga.com</span><span>↗</span></a>
             <a href="https://investmentregulation.ca"><span>CIRE site</span><span>investmentregulation.ca</span><span>↗</span></a>
             <a href="https://www.linkedin.com/in/daniel-sultan"><span>LinkedIn</span><span>daniel-sultan</span><span>↗</span></a>
             <a href="https://github.com/itsdanielsultan"><span>GitHub</span><span>@itsdanielsultan</span><span>↗</span></a>

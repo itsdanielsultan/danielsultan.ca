@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://danielsultan.ca/portfolio.html" />
     <title>Portfolio · Daniel Sultan</title>
     <meta
       name="description"
-      content="A chronological record of websites, physical projects and open-source tools built by Daniel Sultan."
+      content="Daniel Sultan's projects: Future Mississauga, IFC Prep, InvestmentRegulation.ca, a published Raycast extension and smaller practical tools."
     />
     <meta property="og:title" content="Portfolio · Daniel Sultan" />
     <meta
       property="og:description"
-      content="A chronological record of websites, physical projects and open-source tools built by Daniel Sultan."
+      content="Daniel Sultan's projects: Future Mississauga, IFC Prep, InvestmentRegulation.ca, a published Raycast extension and smaller practical tools."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://danielsultan.ca/portfolio.html" />
@@ -34,7 +35,7 @@
       })();
     </script>
     <link rel="stylesheet" href="styles.css?v=16" />
-    <link rel="stylesheet" href="atlas.css?v=1" />
+    <link rel="stylesheet" href="atlas.css?v=2" />
     <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,32 +67,59 @@
 
     <main>
       <header class="page-hero page-head frame">
-        <p class="eyebrow">Built, tested and published</p>
+        <p class="eyebrow">Selected projects · October 2026</p>
         <h1>Portfolio</h1>
         <p>
-          A chronological record of things I have made. Each entry separates what I built
-          from what happened after I published or submitted it.
+          City models, learning tools and small fixes for everyday problems. Here is what
+          each project does, what I contributed and where you can try it or inspect the work.
         </p>
       </header>
 
       <section class="band frame" aria-labelledby="portfolio-heading">
         <div class="rule-label">
           <h2 id="portfolio-heading">Selected work</h2>
-          <span class="count">Newest first · 2025–2026</span>
+          <span class="count">Live projects · 2026</span>
         </div>
 
         <div class="portfolio-list ledger-rows" id="portfolio-list">
           <article class="portfolio-entry lrow lrow--illustrated" id="future-mississauga" aria-labelledby="portfolio-future">
-            <div class="lrow-when"><strong><time datetime="2026-09">Sep 2026</time></strong><span>3D atlas · Ongoing</span></div>
+            <div class="lrow-when"><strong><time datetime="2026-10">Oct 2026</time></strong><span>3D atlas · Ongoing</span></div>
             <div class="portfolio-copy">
               <h3 id="portfolio-future">Future Mississauga</h3>
               <p class="org">Live website · Independent city visualisation</p>
-              <p class="plain">I taught myself Blender and spent nearly six months exploring how Mississauga’s buildings and transit fit together. The result is a visual atlas with skyline pictures, neighbourhood comparisons and an interactive 3D model, from Downtown to Port Credit, Lakeview and Clarkson.</p>
-              <p class="plain">I directed the project and combined my own modelling with City data, project drawings and downloaded assets. I used AI to help with geometry repairs, conversion, rendering scripts and parts of the website, then reviewed and refined the results.</p>
-              <p class="plain">The model separates existing context, construction and retained proposals. Proposed buildings may change or never be built; schematic forms and uncertain sources are documented.</p>
-              <div class="links"><a class="link" href="https://futuremississauga.com/">Explore the atlas</a><a class="link" href="https://futuremississauga.com/explore.html">Open the 3D model</a><a class="link" href="https://www.reddit.com/r/mississauga/comments/1wn14jq/i_made_a_3d_model_of_mississaugas_future_skyline/">Read the launch post</a></div>
+              <p class="plain">An independent visual atlas of Mississauga, with 17 explorable areas, skyline comparisons and an interactive 3D view. Building studies added on October 17 take a closer look at individual developments, alongside public source and review notes.</p>
+              <p class="plain">I direct the project, combining my Blender modelling with City data, project drawings and credited assets. AI assists with geometry repairs, conversion, rendering scripts and website implementation; I review and refine the results.</p>
+              <p class="plain">The atlas distinguishes existing buildings, construction and proposals. It is a way to explore possible change, not an official plan or a prediction that every proposal will be built.</p>
+              <div class="links"><a class="link" href="https://futuremississauga.com/">Explore the atlas</a><a class="link" href="future-mississauga.html">Read the case study</a><a class="link" href="https://github.com/itsdanielsultan/future-mississauga">View the public source</a></div>
             </div>
-            <figure class="project-photo"><a href="https://futuremississauga.com/" aria-label="Explore the Future Mississauga city atlas"><img src="assets/work/future-mississauga-downtown.webp" width="1600" height="1000" alt="Downtown Mississauga in my 3D model, with colour-coded development and transit." decoding="async" /></a><figcaption>A real view from the atlas. September 2026.</figcaption></figure>
+            <figure class="project-photo"><a href="https://futuremississauga.com/" aria-label="Explore the Future Mississauga city atlas"><img src="assets/work/future-mississauga-downtown.webp" width="1600" height="1000" alt="Downtown Mississauga in my 3D model, with colour-coded development and transit." decoding="async" /></a><figcaption>Downtown render from September 2026, before the October additions.</figcaption></figure>
+          </article>
+
+          <article class="portfolio-entry lrow" aria-labelledby="portfolio-ifc">
+            <div class="lrow-when">
+              <strong><time datetime="2026-10">Oct 2026</time></strong>
+              <span>Study tool · Live</span>
+            </div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-ifc">IFC Prep</h3>
+              <p class="org">Free, open-source Investment Funds in Canada study companion</p>
+              <p class="plain">
+                I built on the learning approach behind InvestmentRegulation.ca with 54
+                lessons across 18 chapters, a separate 324-question practice bank and 162
+                flashcards. Worked examples, written exercises and mock papers give learners
+                different ways to practise the same ideas.
+              </p>
+              <p class="plain">
+                Progress and unfinished sessions stay in the browser, with exportable
+                backups and printable notes. The downloaded HTML works offline. It is an
+                independent companion, not an official CSI product or a replacement for
+                the purchased course.
+              </p>
+              <div class="links">
+                <a class="link" href="https://ifcprep.ca/">Try IFC Prep</a>
+                <a class="link" href="https://github.com/itsdanielsultan/IFC-Prep">View the source</a>
+              </div>
+            </div>
           </article>
 
           <article class="portfolio-entry lrow lrow--illustrated" aria-labelledby="portfolio-cire">
@@ -101,14 +129,14 @@
             </div>
             <div class="portfolio-copy">
               <h3 id="portfolio-cire">InvestmentRegulation.ca</h3>
-              <p class="org">Stage: live · Free, open-source CIRE study website</p>
+              <p class="org">Live · Free, open-source CIRE study website</p>
               <p class="plain">
-                The official exam material says what people need to know, but does not teach
-                it from the beginning. I turned the syllabus into 69 plain-language lessons
-                across eight chapters.
+                A study resource for the Canadian Investment Regulatory Exam, starting
+                with the basics and building through 69 plain-language lessons across eight
+                chapters. I wanted the explanations to teach the ideas before testing them.
               </p>
               <p class="plain">
-                The finished site includes 100 practice questions, flashcards, short drills
+                The site includes 100 practice questions, flashcards, short drills
                 and a mock exam. It needs no account or payment, and progress stays in the
                 learner's own browser.
               </p>
@@ -126,6 +154,73 @@
             </figure>
           </article>
 
+          <article class="portfolio-entry lrow" aria-labelledby="portfolio-caps-lock">
+            <div class="lrow-when">
+              <strong><time datetime="2026-10-13">Oct 13, 2026</time></strong>
+              <span>Extension · Published</span>
+            </div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-caps-lock">Caps Lock for Raycast</h3>
+              <p class="org">Available in the Raycast Store · Merged upstream</p>
+              <p class="plain">
+                Remapping Caps Lock to another shortcut should not mean losing Caps Lock
+                itself. This extension turns it on or off from Raycast or a hotkey, without
+                changing the user's keyboard mappings.
+              </p>
+              <p class="plain">
+                A TypeScript command calls a native Swift helper, checks the resulting
+                keyboard state and reports it. The implementation handles overlapping
+                requests and stalled calls. Raycast merged the contribution and published
+                it on October 13.
+              </p>
+              <div class="links">
+                <a class="link" href="https://www.raycast.com/itsdanielsultan/caps-lock">Get the extension</a>
+                <a class="link" href="https://github.com/raycast/extensions/pull/31864">See the merged contribution</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band frame" aria-labelledby="smaller-tools-heading">
+        <div class="rule-label">
+          <h2 id="smaller-tools-heading">Smaller tools and experiments</h2>
+          <span class="count">October 2026</span>
+        </div>
+        <div class="portfolio-list ledger-rows">
+          <article class="portfolio-entry lrow" aria-labelledby="portfolio-little-pile">
+            <div class="lrow-when"><strong><time datetime="2026-10-20">Oct 20</time></strong><span>Browser tool · Live</span></div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-little-pile">Little Pile</h3>
+              <p class="plain">Paste a loose list of notes, review suggested groups and export Markdown. A small model runs on the device; the notes are not sent to a model service. I built this with AI assistance, with manual regrouping and checks that every original item survives the export.</p>
+              <div class="links"><a class="link" href="https://itsdanielsultan.github.io/little-pile/">Try Little Pile</a><a class="link" href="https://github.com/itsdanielsultan/little-pile">View the source</a></div>
+            </div>
+          </article>
+          <article class="portfolio-entry lrow" aria-labelledby="portfolio-pocket-outside">
+            <div class="lrow-when"><strong><time datetime="2026-10-09">Oct 9–10</time></strong><span>Browser tool · Live</span></div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-pocket-outside">Pocket Outside</h3>
+              <p class="plain">Describe the kind of outdoor break you want, choose a Mississauga park and print a short plan. A browser-local model matches the request against eight checked park descriptions. The park facts come from linked sources, not generated text. Built with Codex assistance.</p>
+              <div class="links"><a class="link" href="https://itsdanielsultan.github.io/pocket-outside/">Try Pocket Outside</a><a class="link" href="https://github.com/itsdanielsultan/pocket-outside">View the source</a></div>
+            </div>
+          </article>
+          <article class="portfolio-entry lrow" aria-labelledby="portfolio-oppo">
+            <div class="lrow-when"><strong><time datetime="2026-10-12">Oct 2026</time></strong><span>Device toolkit · Prerelease</span></div>
+            <div class="portfolio-copy">
+              <h3 id="portfolio-oppo">Giving an old Oppo A1k another use</h3>
+              <p class="plain">I upgraded one tested phone from Android 9 to Android 11 and published the device-specific fixes, build tools, checks and recovery guide. The work adapts an existing LineageOS release; it is not a new operating system. The Codex-assisted guide records what worked, what remains untested and the older security-patch limits.</p>
+              <div class="links"><a class="link" href="https://github.com/itsdanielsultan/oppo-a1k-lineageos-18.1">Read the guide and source</a><a class="link" href="https://github.com/itsdanielsultan/oppo-a1k-lineageos-18.1/releases/tag/v1.0.1">See the toolkit prerelease</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band frame" aria-labelledby="earlier-work-heading">
+        <div class="rule-label">
+          <h2 id="earlier-work-heading">Earlier work</h2>
+          <span class="count">2025–2026</span>
+        </div>
+        <div class="portfolio-list ledger-rows">
           <article class="portfolio-entry lrow lrow--illustrated" aria-labelledby="portfolio-synapse">
             <div class="lrow-when">
               <strong><time datetime="2026-06-02">Jun 2026</time></strong>
@@ -195,13 +290,13 @@
               <h3 id="portfolio-raycast">Craft Capture software extension</h3>
               <p class="org">Stage: submitted to Raycast · Automatically closed · Not merged</p>
               <p class="plain">
-                I built a Mac shortcut for sending a task into Craft without stopping to
-                switch apps. I tested the distribution build and submitted the extension to
-                Raycast's public extensions repository as pull request #25100.
+                An early Mac shortcut for sending a task into Craft without switching
+                apps. I submitted it to Raycast's public extensions repository as pull
+                request #25100 on February 3.
               </p>
               <p class="plain">
                 The submission was automatically closed for inactivity on February 24,
-                2026. It was not reviewed or merged into the Raycast Store.
+                2026. It was not merged and is not a published Raycast Store extension.
               </p>
               <span class="honest">Status: submitted, closed, not merged</span>
               <div class="links">
@@ -213,19 +308,20 @@
           <article class="portfolio-entry lrow" aria-labelledby="portfolio-pieoneer">
             <div class="lrow-when">
               <strong><time datetime="2025-12">Dec 2025</time></strong>
-              <span>Open source · Ongoing</span>
+              <span>Shortcut templates</span>
             </div>
             <div class="portfolio-copy">
               <h3 id="portfolio-pieoneer">Pieoneer shortcut collection</h3>
-              <p class="org">Stage: ongoing open-source project</p>
+              <p class="org">Published open-source collection · Eight Mac apps</p>
               <p class="plain">
                 Pieoneer opens a wheel of commands around the cursor when a key is held. I
                 made and published a collection of shortcut wheels for the apps I use most,
                 so common actions stay close to the pointer.
               </p>
               <p class="plain">
-                The collection is public, editable and has received 14 GitHub stars as of
-                August 2026.
+                The editable templates cover Beeper, ChatGPT Atlas, Craft, Dia, Finder,
+                Notes, Safari and Sketch. This is a shortcut collection for Pieoneer,
+                not the Pieoneer application itself.
               </p>
               <div class="links">
                 <a class="link" href="https://github.com/itsdanielsultan/pieoneer">Open it on GitHub</a>
@@ -261,7 +357,7 @@
 
         <div class="colophon">
           <span>© 2026 Daniel Sultan</span>
-          <span>Portfolio updated September 2026</span>
+          <span>Portfolio updated October 21, 2026</span>
         </div>
       </div>
     </footer>

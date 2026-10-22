@@ -73,6 +73,14 @@
   .atlas-project-copy h2 { font: 500 clamp(30px, 3.5vw, 46px)/1.15 var(--display); letter-spacing: -.045em; margin: 0; }
   .atlas-project-copy p:not(.eyebrow) { margin: 0 0 16px; max-width: 60ch; line-height: 1.7; }
   .muted { color: var(--ink-soft); }
+  .project-followup { border-top: 1px solid var(--rule); margin-top: 32px; padding-top: 28px; }
+  .project-followup h3 { font: 600 27px/1.25 var(--display); margin: 0 0 14px; letter-spacing: -.025em; }
+  .study-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 28px; }
+  .feature-inner > .study-pair { max-width: none; }
+  .study-pair > * { min-width: 0; margin: 0; }
+  .prose .study-pair { margin-bottom: 24px; }
+  .study-pair .project-photo img { height: auto; aspect-ratio: 4 / 3; object-fit: contain; }
+  .study-pair .factline { gap: 20px; flex-wrap: wrap; }
   @media (max-width: 980px) {
     .atlas-intro-grid { gap: 36px; }
     .atlas-intro .statement { font-size: 68px; }
@@ -80,6 +88,7 @@
     .proof-grid { gap: 22px; }
   }
   @media (max-width: 720px) {
+    .study-pair { grid-template-columns: minmax(0, 1fr); gap: 28px; }
     .atlas-intro-grid, .atlas-project-copy { grid-template-columns: minmax(0, 1fr); gap: 30px; }
     .intro-current { justify-self: start; max-width: none; }
     .atlas-intro .statement { font-size: clamp(54px, 11vw, 68px); }

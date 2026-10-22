@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://danielsultan.ca/" />
     <title>Daniel Sultan</title>
-    <meta name="description" content="Daniel Sultan is building Future Mississauga, an interactive 3D city atlas, and InvestmentRegulation.ca, a free, open-source CIRE study course." />
+    <meta name="description" content="Daniel Sultan builds Future Mississauga, free CIRE and IFC study tools, and practical open-source software. Explore the projects, process and work history." />
     <meta property="og:title" content="Daniel Sultan" />
-    <meta property="og:description" content="Currently building Future Mississauga and InvestmentRegulation.ca. Explore my 3D city atlas, learning tools and other projects." />
+    <meta property="og:description" content="Explore Future Mississauga, InvestmentRegulation.ca, IFC Prep and practical open-source tools by Daniel Sultan." />
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://danielsultan.ca/" />
     <meta property="og:image" content="https://danielsultan.ca/assets/daniel-sultan-projects-social-card.png?v=2" />
@@ -28,7 +29,7 @@
       })();
     </script>
     <link rel="stylesheet" href="styles.css?v=16" />
-    <link rel="stylesheet" href="atlas.css?v=1" />
+    <link rel="stylesheet" href="atlas.css?v=2" />
     <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -67,11 +68,11 @@
             </div>
           </div>
           <div class="intro-current">
-            <p class="hero-lead">Currently building <a class="text-link" href="https://futuremississauga.com/">Future Mississauga</a> and <a class="text-link" href="https://investmentregulation.ca/">InvestmentRegulation.ca</a>.</p>
-            <p class="standfirst">One lets you explore a changing city. The other helps you learn Canadian investment regulation from the beginning.</p>
+            <p class="hero-lead">I build things that make complicated ideas easier to explore.</p>
+            <p class="standfirst">Right now, that means <a class="text-link" href="future-mississauga.html">Future Mississauga</a>, an interactive city atlas, and two free study tools: <a class="text-link" href="cire.html">InvestmentRegulation.ca</a> and <a class="text-link" href="https://ifcprep.ca/">IFC Prep</a>.</p>
             <div class="actions">
               <a class="btn btn-solid" href="portfolio.html">Explore my work</a>
-              <a class="btn btn-ghost" href="assets/Daniel_Sultan_Resume.pdf">Résumé PDF</a>
+              <a class="btn btn-ghost" href="contact.html">Get in touch</a>
             </div>
           </div>
         </div>
@@ -79,331 +80,116 @@
 
       <section class="atlas-project frame" id="future-mississauga" aria-labelledby="future-title">
         <figure class="atlas-cover">
-          <a href="https://futuremississauga.com/" aria-label="Explore Future Mississauga">
-            <img src="assets/work/future-mississauga-downtown.webp" width="1600" height="1000" alt="My 3D model of Downtown Mississauga, showing existing buildings, construction and proposed development around the Hurontario corridor." fetchpriority="high" decoding="async" />
+          <a href="future-mississauga.html" aria-label="Read about Future Mississauga">
+            <img src="assets/work/future-mississauga-downtown.webp" width="1600" height="1000" alt="Downtown Mississauga in my 3D atlas, with existing buildings, construction and proposed development around the Hurontario corridor." fetchpriority="high" decoding="async" />
           </a>
-          <figcaption><span>01 / Future Mississauga</span><span>Downtown · Retained development scenario</span></figcaption>
+          <figcaption><span>01 / Future Mississauga</span><span>Downtown development scenario · September 2026 render</span></figcaption>
         </figure>
         <div class="atlas-project-copy">
           <div><p class="eyebrow">Current project · 3D visual atlas</p><h2 id="future-title">A city taking shape.</h2></div>
           <div>
-            <p>I taught myself Blender to see how Mississauga’s new buildings and transit fit together. Future Mississauga brings together skyline pictures, neighbourhood comparisons and an interactive 3D model.</p>
-            <p class="muted">Built with my own modelling, City data, project drawings and some downloaded models. It is an independent, ongoing project: proposed buildings are not guaranteed, and schematic or uncertain details are marked.</p>
-            <div class="links"><a class="link" href="https://futuremississauga.com/">Explore the atlas</a><a class="link" href="https://www.reddit.com/r/mississauga/comments/1wn14jq/i_made_a_3d_model_of_mississaugas_future_skyline/">The Reddit discussion</a></div>
+            <p>I taught myself Blender to understand how Mississauga’s buildings and transit fit together. The atlas now covers 17 areas, with an interactive 3D explorer, existing-and-proposed views, and sources you can follow.</p>
+            <p>It keeps growing through drawings, reference photographs and local feedback. October’s release added Churchill Meadows and more detailed building studies, with a public record of corrections and remaining approximations.</p>
+            <p class="muted">An independent project, not an official City forecast. Retained proposals may change or never be built.</p>
+            <div class="links"><a class="link" href="https://futuremississauga.com/">Explore the atlas</a><a class="link" href="future-mississauga.html">How I’m building it</a><a class="link" href="https://futuremississauga.com/accuracy-review.html">Sources and limitations</a></div>
           </div>
         </div>
       </section>
 
-      <section class="feature" id="cire">
+      <section class="feature" id="learning">
         <div class="frame feature-inner feature-inner--illustrated">
           <div>
-            <p class="eyebrow">02 / InvestmentRegulation.ca · Free and open source</p>
-            <h2>investmentregulation.ca</h2>
-            <div class="factline">
-              <div><b>69</b><span>Lessons</span></div>
-              <div><b>100</b><span>Questions</span></div>
-              <div><b>8</b><span>Chapters</span></div>
-              <div><b>3</b><span>Weeks</span></div>
-            </div>
-            <p class="first">
-              I built this because the official CIRE material tells you what to know, but
-              does not teach it from the beginning.
-            </p>
-            <p>
-              The site turns the syllabus into 69 plain-language lessons, flashcards, practice
-              rounds and a full mock exam. It starts with “What is investing?” and works up
-              to the material people are expected to know for the exam.
-            </p>
-            <p>
-              It is free and open source. There is no account, and study progress stays in
-              the person’s own browser.
-            </p>
-            <div class="links">
-              <a class="link" href="https://investmentregulation.ca">Open the site</a>
-              <a class="link" href="cire.html">How I built my CIRE course</a>
-              <a class="link" href="https://medium.com/@itsdanielsultan/introducing-investmentregulation-ca-659e3e421be0">The launch post</a>
+            <p class="eyebrow">02 / Learning tools · Free and open source</p>
+            <h2>Start with understanding.</h2>
+            <p class="first">InvestmentRegulation.ca started with a simple idea: explain the basics before asking someone to memorize the rules.</p>
+            <p>I built the first version over three weeks. It works from “What is investing?” through 69 lessons, with flashcards, practice drills and a 100-question mock exam for the Canadian Investment Regulatory Exam.</p>
+            <div class="links"><a class="link" href="https://investmentregulation.ca/">Try the CIRE site</a><a class="link" href="cire.html">Read the build story</a></div>
+            <div class="project-followup">
+              <p class="eyebrow">New in October</p>
+              <h3>IFC Prep</h3>
+              <p>A separate companion for the Investment Funds in Canada course: 54 lessons, 18 workshops, 324 practice questions and 162 flashcards. Study in the browser, download it for offline use, or print a companion.</p>
+              <p class="muted">Both tools are independent study resources. IFC Prep is not CSI-endorsed or a replacement for the purchased course.</p>
+              <div class="links"><a class="link" href="https://ifcprep.ca/">Try IFC Prep</a><a class="link" href="https://github.com/itsdanielsultan/IFC-Prep">Read the source</a></div>
             </div>
           </div>
           <figure class="project-photo">
-            <a href="cire.html" aria-label="See the CIRE study screen and read how I built the course">
+            <a href="cire.html" aria-label="Read how I built my CIRE course">
               <img src="assets/work/cire-study-screen.webp" width="1000" height="720" alt="The CIRE study dashboard, showing course progress, flashcards and practice drills." loading="lazy" decoding="async" />
             </a>
-            <figcaption>Inside the study site. September 2026.</figcaption>
+            <figcaption>InvestmentRegulation.ca study dashboard. September 2026.</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="band frame" id="proof-summary">
-        <div class="rule-label">
-          <h2>Evidence and recognition</h2>
-          <span class="count">Sources linked</span>
-        </div>
-
-        <div class="proof-grid" aria-label="Selected evidence">
+      <section class="band frame" id="proof-summary" aria-labelledby="recent-title">
+        <div class="rule-label"><h2 id="recent-title">Recently shipped</h2><span class="count">October 2026</span></div>
+        <div class="proof-grid">
           <article class="proof-item">
-            <div class="proof-heading">
-              <p class="proof-value">69 · 100 · 8</p>
-              <span class="identity-mark identity-mark--symbol" aria-hidden="true"><img src="assets/identity/graduation-cap.png" alt="" width="96" height="96" loading="lazy" decoding="async" /></span>
-            </div>
-            <h3>InvestmentRegulation.ca</h3>
-            <p>Stage: live public website. It contains 69 lessons, 100 questions and eight chapters.</p>
-            <a class="link" href="https://investmentregulation.ca">Check the site</a>
+            <p class="eyebrow">Mac utility</p>
+            <h3>Caps Lock for Raycast</h3>
+            <p>A small command that toggles native Caps Lock, even when the physical key has another job. Published in the official Raycast Store.</p>
+            <a class="link" href="https://www.raycast.com/itsdanielsultan/caps-lock">View in the Store</a>
           </article>
           <article class="proof-item">
-            <div class="proof-heading">
-              <p class="proof-value">14</p>
-              <span class="identity-mark identity-mark--symbol" aria-hidden="true"><img src="assets/identity/code-xml.png" alt="" width="96" height="96" loading="lazy" decoding="async" /></span>
-            </div>
-            <h3>Pieoneer repository</h3>
-            <p>Stage: ongoing open-source project. The repository had 14 stars in August 2026.</p>
-            <a class="link" href="https://github.com/itsdanielsultan/pieoneer">Check the repository</a>
+            <p class="eyebrow">Browser-local experiment</p>
+            <h3>Little Pile</h3>
+            <p>Turn loose notes into groups you can review and export as Markdown. A small model runs in the browser, with you deciding what stays together.</p>
+            <a class="link" href="https://itsdanielsultan.github.io/little-pile/">Try the notes tool</a>
           </article>
           <article class="proof-item">
-            <div class="proof-heading">
-              <p class="proof-value">Jun 2026</p>
-              <span class="identity-mark" aria-hidden="true"><img src="assets/identity/woodlands.png" alt="" width="160" height="160" loading="lazy" decoding="async" /></span>
-            </div>
-            <h3>Ontario Secondary School Diploma</h3>
-            <p>The Woodlands Secondary School, June 2026. Ontario Scholar.</p>
-            <a class="link" href="proof.html#recognition">Education and recognition</a>
+            <p class="eyebrow">Model refinement</p>
+            <h3>From map to reference</h3>
+            <p>A before-and-after study shows how architectural references changed the Winding Trail model, with the remaining estimates clearly noted.</p>
+            <a class="link" href="future-mississauga.html#refinements">See the process</a>
           </article>
         </div>
-
-        <a class="feedback-note" href="https://www.reddit.com/r/mississauga/comments/1wn14jq/i_made_a_3d_model_of_mississaugas_future_skyline/">
-          <span class="feedback-label">In the community</span>
-          <blockquote>Future Mississauga</blockquote>
-          <span class="feedback-source">See the project and discussion on r/mississauga&nbsp; ↗</span>
-        </a>
-
-        <div class="section-link">
-          <a class="btn btn-ghost" href="proof.html">See the evidence</a>
-        </div>
+        <div class="section-link"><a class="btn btn-ghost" href="proof.html">Check the evidence</a></div>
       </section>
 
       <section class="band frame" id="projects">
-        <div class="rule-label">
-          <h2>Selected projects</h2>
-          <span class="count">Four documented projects</span>
-        </div>
-
+        <div class="rule-label"><h2>Off the screen</h2><span class="count">Physical builds · June 2026</span></div>
         <div class="ledger-rows">
           <a class="lrow lrow--illustrated" href="https://medium.com/@itsdanielsultan/i-wanted-to-build-a-game-1a72ee7dcdb5">
-            <div class="lrow-when"><strong>Jun 2026</strong><span>Physical prototype</span></div>
+            <div class="lrow-when"><strong>Synapse</strong><span>Memory-game prototype</span></div>
             <div>
-              <h3>Synapse memory-game prototype</h3>
-              <p class="org">Stage: physical prototype · Informal classmate testing</p>
-              <p class="plain">
-                One person lays out a pattern of shapes on a board. The other person looks
-                at it, the board gets covered, and they try to put it back the same way.
-                You score on how close you got, not how fast you were.
-              </p>
-              <p class="plain">
-                I made the board and the tiles by hand. The hard part was working out how
-                many shapes to use, too few and nobody gets it wrong, too many and nobody
-                gets it right.
-              </p>
-              <span class="link">Read how I made it</span>
+              <h3>Remember the pattern.</h3>
+              <p class="plain">Study a board of shapes, cover it, then rebuild it from memory. I made the board and pieces, tried different grid sizes with classmates, and changed the scoring to reward accuracy instead of a perfect attempt.</p>
+              <span class="link">Read the build story</span>
             </div>
-            <figure class="project-photo">
-              <img src="assets/work/synapse-board-top-down.webp" width="960" height="720" alt="Top-down view of my handmade Synapse memory-game board, with a red frame and felt tiles." loading="lazy" decoding="async" />
-              <figcaption>The finished Synapse board.</figcaption>
-            </figure>
+            <figure class="project-photo"><img src="assets/work/synapse-board-top-down.webp" width="960" height="720" alt="Top-down view of my Synapse memory-game prototype with a red frame and felt tiles." loading="lazy" decoding="async" /><figcaption>The finished Synapse board.</figcaption></figure>
           </a>
-
           <a class="lrow lrow--illustrated" href="https://itsdanielsultan.github.io/Physics-Website/">
-            <div class="lrow-when"><strong>Jun 2026</strong><span>Completed school project</span></div>
+            <div class="lrow-when"><strong>Electromagnetism</strong><span>Physics project</span></div>
             <div>
-              <h3>Electromagnetic physics demonstration</h3>
-              <p class="org">Stage: completed · Working crane, experiment and project website</p>
-              <p class="plain">
-                If you wrap wire around a piece of metal and run electricity through it, the
-                metal turns into a magnet. Turn the electricity off and whatever it was
-                holding drops. I built a small crane that works this way.
-              </p>
-              <p class="plain">
-                Then I changed one thing at a time, more wire, more electricity, a
-                different metal in the middle, and wrote down what each change did. The
-                whole thing is a webpage instead of a folder in my room.
-              </p>
-              <span class="link">Look at the project</span>
+              <h3>Build it. Change one thing. Test again.</h3>
+              <p class="plain">A small electromagnetic crane became a way to test wire, current and core materials. I published the experiment, results and prototype photographs together.</p>
+              <span class="link">Explore the experiment</span>
             </div>
-            <figure class="project-photo project-photo--portrait">
-              <img src="assets/work/electromagnetic-crane.webp" width="720" height="960" alt="My electromagnetic crane lifting a washer during a test on a digital scale." loading="lazy" decoding="async" />
-              <figcaption>Testing the crane's lifting strength.</figcaption>
-            </figure>
-          </a>
-
-          <a class="lrow" href="https://github.com/raycast/extensions/pull/25100">
-            <div class="lrow-when"><strong>Feb 2026</strong><span>Submitted · Not merged</span></div>
-            <div>
-              <h3>Free, open-source Craft Capture extension</h3>
-              <p class="org">Stage: submitted to Raycast · Automatically closed without merge</p>
-              <p class="plain">
-                Raycast lets you run things on a Mac by typing instead of clicking. Craft is
-                where I keep my notes. There was no way to send a task from one to the
-                other without stopping and switching apps, so I wrote the piece of software
-                that does it.
-              </p>
-              <p class="plain">
-                I offered it to Raycast to include in their app. They didn't take it. It
-                works, and anyone can read the code.
-              </p>
-              <span class="link">Read the code</span>
-            </div>
-          </a>
-
-          <a class="lrow" href="https://github.com/itsdanielsultan/pieoneer">
-            <div class="lrow-when"><strong>Aug 2026</strong><span>Ongoing open source</span></div>
-            <div>
-              <h3>Pieoneer shortcut collection</h3>
-              <p class="org">Stage: ongoing open-source project</p>
-              <p class="plain">
-                You hold down a key and a wheel of options appears around your cursor. I put
-                together a set for the Mac apps I'm in every day and put it online.
-                Fourteen people I've never met have saved it.
-              </p>
-              <span class="link">Open it on GitHub</span>
-            </div>
+            <figure class="project-photo project-photo--portrait"><img src="assets/work/electromagnetic-crane.webp" width="720" height="960" alt="My electromagnetic crane lifting a washer during a test on a digital scale." loading="lazy" decoding="async" /><figcaption>Testing the crane’s lifting strength.</figcaption></figure>
           </a>
         </div>
-      </section>
-
-      <section class="band frame" id="community">
-        <div class="rule-label">
-          <h2>Teaching and community</h2>
-          <span class="count">Youth programs and tutoring</span>
-        </div>
-
-        <div class="ledger-rows">
-          <article class="lrow">
-            <div class="lrow-when"><strong>Aug 2022–Jun 2025</strong><span>Completed · Contract</span></div>
-            <div>
-              <div class="identity-heading">
-                <span class="identity-mark" aria-hidden="true"><img src="assets/identity/sportstars.png" alt="" width="160" height="160" loading="lazy" decoding="async" /></span>
-                <div><h3>SportStars Youth Soccer Club</h3><p class="org">Youth Soccer Coach · Contract part-time</p></div>
-              </div>
-              <ul>
-                <li>Planned and led soccer and multi-sport sessions using clear, age-appropriate drills.</li>
-                <li>Supervised safety and behaviour and communicated with children, families and program staff.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="lrow">
-            <div class="lrow-when"><strong>Jul–Sep 2025</strong><span>Completed · Seasonal</span></div>
-            <div>
-              <div class="identity-heading">
-                <span class="identity-mark identity-mark--symbol" aria-hidden="true"><img src="assets/identity/tent-tree.png" alt="" width="96" height="96" loading="lazy" decoding="async" /></span>
-                <div><h3>Private Youth Camp</h3><p class="org">Youth Camp Leader · Seasonal</p></div>
-              </div>
-              <ul>
-                <li>Led games and group activities for children and families.</li>
-                <li>Managed equipment, activity changes and participant safety.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="lrow">
-            <div class="lrow-when"><strong>Jul–Sep 2024</strong><span>Completed · Seasonal</span></div>
-            <div>
-              <div class="identity-heading">
-                <span class="identity-mark identity-mark--bethany" aria-hidden="true"><img src="assets/identity/bethany-baptist.png" alt="" width="358" height="144" loading="lazy" decoding="async" /></span>
-                <div><h3>Bethany Baptist Church</h3><p class="org">Summer Camp Counsellor · Seasonal</p></div>
-              </div>
-              <ul>
-                <li>Led daily recreational and educational activities in a safe, organized camp.</li>
-                <li>Managed routines, attendance, activity changes and conflict resolution.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="lrow">
-            <div class="lrow-when"><strong>Sep 2022–Jun 2024</strong><span>Completed</span></div>
-            <div>
-              <div class="identity-heading">
-                <span class="identity-mark identity-mark--symbol" aria-hidden="true"><img src="assets/identity/book-open.png" alt="" width="96" height="96" loading="lazy" decoding="async" /></span>
-                <div><h3>One-on-one tutoring</h3><p class="org">Self-employed · Informal Tutor</p></div>
-              </div>
-              <ul>
-                <li>Explained schoolwork step by step and adapted the approach to each student.</li>
-                <li>Helped students organize their work and build stronger study habits.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="band frame no-print" id="writing">
-        <div class="rule-label">
-          <h2>Writing and build notes</h2>
-          <span class="count">Public pages</span>
-        </div>
-
-        <div class="ledger-rows">
-          <a class="lrow lrow--compact" href="cire.html">
-            <div class="lrow-when"><strong>2026</strong><span>Case study</span></div>
-            <div>
-              <h3>How I built my CIRE course</h3>
-              <p class="plain">The decisions, testing and rewrites behind InvestmentRegulation.ca.</p>
-              <span class="link">Read the case study</span>
-            </div>
-          </a>
-
-          <a class="lrow lrow--compact" href="https://medium.com/@itsdanielsultan/introducing-investmentregulation-ca-659e3e421be0">
-            <div class="lrow-when"><strong>2026</strong><span>Launch note</span></div>
-            <div>
-              <h3>Introducing InvestmentRegulation.ca</h3>
-              <p class="plain">A short explanation of why I made the study site and what is inside it.</p>
-              <span class="link">Read on Medium</span>
-            </div>
-          </a>
-
-          <a class="lrow lrow--compact" href="https://medium.com/@itsdanielsultan/i-wanted-to-build-a-game-1a72ee7dcdb5">
-            <div class="lrow-when"><strong>2026</strong><span>Build note</span></div>
-            <div>
-              <h3>I wanted to build a game</h3>
-              <p class="plain">How Synapse changed from an idea into a physical memory game.</p>
-              <span class="link">Read on Medium</span>
-            </div>
-          </a>
-        </div>
+        <div class="section-link"><a class="btn btn-ghost" href="portfolio.html">All projects and tools</a></div>
       </section>
 
       <section class="belief-band" id="belief">
-        <div class="frame belief-inner">
-          <p class="eyebrow">What I believe</p>
-          <p class="belief-statement">If work is meant to help people, they should be able to understand it and inspect how it works.</p>
-        </div>
+        <div class="frame belief-inner"><p class="eyebrow">A common thread</p><p class="belief-statement">Make the idea easier to understand. Leave the work open to inspection.</p></div>
       </section>
 
       <section class="band frame" id="history">
-        <div class="rule-label">
-          <h2>Work history</h2>
-          <span class="count">Full record on its own page</span>
-        </div>
-
+        <div class="rule-label"><h2>Experience beyond the projects</h2><span class="count">Service, teaching and teamwork</span></div>
         <div class="history-summary">
           <div>
-            <p class="eyebrow">Current roles</p>
-            <div class="identity-strip" aria-hidden="true">
-              <span class="identity-mark"><img src="assets/identity/neo-financial.png" alt="" width="160" height="160" loading="lazy" decoding="async" /></span>
-              <span class="identity-mark"><img src="assets/identity/tim-hortons.png" alt="" width="160" height="160" loading="lazy" decoding="async" /></span>
-            </div>
-            <h3>Neo Financial and Tim Hortons</h3>
-            <p>Customer-facing financial sales and high-volume service work, built around trust, clear communication and reliable execution.</p>
+            <div class="identity-strip" aria-hidden="true"><span class="identity-mark"><img src="assets/identity/neo-financial.png" alt="" width="160" height="160" loading="lazy" decoding="async" /></span><span class="identity-mark"><img src="assets/identity/tim-hortons.png" alt="" width="160" height="160" loading="lazy" decoding="async" /></span></div>
+            <h3>Customer-facing work</h3>
+            <p>Financial sales and high-volume service have taught me to explain things clearly, listen carefully and follow through when someone needs help.</p>
           </div>
           <div>
-            <p class="eyebrow">Earlier roles</p>
-            <div class="identity-strip" aria-hidden="true">
-              <span class="identity-mark"><img src="assets/identity/sportstars.png" alt="" width="160" height="160" loading="lazy" decoding="async" /></span>
-              <span class="identity-mark"><img src="assets/identity/canadian-tire.png" alt="" width="160" height="160" loading="lazy" decoding="async" /></span>
-              <span class="identity-mark identity-mark--symbol"><img src="assets/identity/book-open.png" alt="" width="96" height="96" loading="lazy" decoding="async" /></span>
-            </div>
-            <h3>Youth programs, retail and tutoring</h3>
-            <p>Coaching, camp leadership, retail service and one-on-one academic support.</p>
+            <div class="identity-strip" aria-hidden="true"><span class="identity-mark"><img src="assets/identity/sportstars.png" alt="" width="160" height="160" loading="lazy" decoding="async" /></span><span class="identity-mark identity-mark--symbol"><img src="assets/identity/book-open.png" alt="" width="96" height="96" loading="lazy" decoding="async" /></span></div>
+            <h3>Teaching and youth programs</h3>
+            <p>Classroom support, coaching, camp leadership and tutoring: different settings, but the same need for patience, clear instructions and a dependable routine.</p>
           </div>
         </div>
-        <div class="section-link"><a class="btn btn-ghost" href="history.html">See full work history</a></div>
+        <div class="section-link"><a class="btn btn-ghost" href="history.html">Work history and training</a></div>
       </section>
     </main>
 
@@ -423,6 +209,7 @@
           <div class="directory">
             <a href="https://futuremississauga.com/"><span>City atlas</span><span>futuremississauga.com</span><span>↗</span></a>
             <a href="https://investmentregulation.ca"><span>CIRE site</span><span>investmentregulation.ca</span><span>↗</span></a>
+            <a href="https://ifcprep.ca/"><span>IFC site</span><span>ifcprep.ca</span><span>↗</span></a>
             <a href="https://www.linkedin.com/in/daniel-sultan"><span>LinkedIn</span><span>daniel-sultan</span><span>↗</span></a>
             <a href="https://github.com/itsdanielsultan"><span>GitHub</span><span>@itsdanielsultan</span><span>↗</span></a>
             <a href="https://medium.com/@itsdanielsultan"><span>Medium</span><span>@itsdanielsultan</span><span>↗</span></a>
@@ -433,7 +220,7 @@
 
         <div class="colophon">
           <span>© 2026 Daniel Sultan</span>
-          <span>Last updated September 2026</span>
+          <span>Updated October 2026</span>
         </div>
       </div>
     </footer>

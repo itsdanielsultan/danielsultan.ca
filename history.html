@@ -30,33 +30,19 @@
     </script>
     <link rel="stylesheet" href="styles.css?v=16" />
     <link rel="stylesheet" href="atlas.css?v=2" />
+    <link rel="stylesheet" href="revamp.css?v=20261023" />
     <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
   </head>
 
   <body>
     <a class="skip" href="#employment">Skip to work history</a>
 
-    <header class="masthead">
-      <div class="frame">
-        <a class="wordmark" href="index.html">Daniel<span class="surname">&nbsp;Sultan</span></a>
-        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open main navigation"><span class="nav-toggle-icon" aria-hidden="true"></span></button>
-        <nav class="mainnav" id="main-navigation" aria-label="Main">
-          <a class="nav-home" href="index.html">Home</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="proof.html">Proof</a>
-          <a href="history.html" aria-current="page">History</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
-          <span class="theme-toggle-track" aria-hidden="true"></span>
-        </button>
-      </div>
-    </header>
+    <header class="masthead"><div class="frame"><a class="wordmark" href="index.html" aria-label="Daniel Sultan, home">Daniel Sultan</a><button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open main navigation"><span class="nav-toggle-icon" aria-hidden="true"></span></button><nav class="mainnav" id="main-navigation" aria-label="Main"><a href="portfolio.html">Work</a><a href="about.html" aria-current="page">About</a><a href="proof.html">Evidence</a><a href="contact.html">Contact</a></nav><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A9 9 0 0 1 9.4 3.5a9 9 0 1 0 11.1 11.1Z"/></svg></button></div></header>
 
-    <main>
+    <main id="main">
       <section class="page-head frame">
         <p class="eyebrow">Work and learning · October 2026</p>
         <h1>Work history</h1>
@@ -206,134 +192,7 @@
       </section>
     </main>
 
-    <footer class="night" id="contact">
-      <div class="frame">
-        <div class="contact-grid">
-          <div>
-            <h2>Get in touch.</h2>
-            <p>I’d love to hear from you. Send me an email about a project, idea or opportunity.</p>
-            <div class="mailrow">
-              <a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a>
-              <button class="copybtn no-print" type="button" id="copybtn" data-mail="thedanielsultan@gmail.com">Copy</button>
-            </div>
-            <p>Greater Toronto Area, Canada</p>
-          </div>
-
-          <div class="directory">
-            <a href="https://futuremississauga.com/"><span>City atlas</span><span>futuremississauga.com</span><span>↗</span></a>
-            <a href="https://investmentregulation.ca"><span>CIRE site</span><span>investmentregulation.ca</span><span>↗</span></a>
-            <a href="https://www.linkedin.com/in/daniel-sultan"><span>LinkedIn</span><span>daniel-sultan</span><span>↗</span></a>
-            <a href="https://github.com/itsdanielsultan"><span>GitHub</span><span>@itsdanielsultan</span><span>↗</span></a>
-            <a href="https://medium.com/@itsdanielsultan"><span>Medium</span><span>@itsdanielsultan</span><span>↗</span></a>
-            <a href="https://linktr.ee/danielsultan" rel="me"><span>Linktree</span><span>linktr.ee/danielsultan</span><span>↗</span></a>
-            <a href="assets/Daniel_Sultan_Resume.pdf"><span>Resume</span><span>PDF, two pages</span><span>↓</span></a>
-          </div>
-        </div>
-
-        <div class="colophon">
-          <span>© 2026 Daniel Sultan</span>
-          <span>Work history updated October 2026</span>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      (function () {
-        var navToggle = document.getElementById("nav-toggle");
-        var mainNavigation = document.getElementById("main-navigation");
-        if (navToggle && mainNavigation) {
-          var closeMainNavigation = function (returnFocus) {
-            mainNavigation.classList.remove("is-open");
-            navToggle.setAttribute("aria-expanded", "false");
-            navToggle.setAttribute("aria-label", "Open main navigation");
-            if (returnFocus) navToggle.focus();
-          };
-
-          navToggle.addEventListener("click", function () {
-            var willOpen = navToggle.getAttribute("aria-expanded") !== "true";
-            mainNavigation.classList.toggle("is-open", willOpen);
-            navToggle.setAttribute("aria-expanded", String(willOpen));
-            navToggle.setAttribute("aria-label", willOpen ? "Close main navigation" : "Open main navigation");
-          });
-
-          mainNavigation.addEventListener("click", function (event) {
-            if (event.target.closest("a")) closeMainNavigation(false);
-          });
-
-          document.addEventListener("keydown", function (event) {
-            if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
-              closeMainNavigation(true);
-            }
-          });
-
-          var desktopNavigation = window.matchMedia("(min-width: 641px)");
-          var resetMobileNavigation = function (event) {
-            if (event.matches) closeMainNavigation(false);
-          };
-          if (desktopNavigation.addEventListener) {
-            desktopNavigation.addEventListener("change", resetMobileNavigation);
-          } else {
-            desktopNavigation.addListener(resetMobileNavigation);
-          }
-        }
-
-        var themeToggle = document.getElementById("theme-toggle");
-        if (themeToggle) {
-          var syncThemeToggle = function () {
-            var isDark = document.documentElement.dataset.theme === "dark";
-            themeToggle.setAttribute("aria-pressed", String(isDark));
-            themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
-          };
-
-          syncThemeToggle();
-          themeToggle.addEventListener("click", function () {
-            var nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-            document.documentElement.dataset.theme = nextTheme;
-            try { localStorage.setItem("daniel-theme", nextTheme); } catch (error) {}
-            syncThemeToggle();
-          });
-        }
-
-        var copy = document.getElementById("copybtn");
-        if (copy) {
-          copy.addEventListener("click", async function () {
-            copy.textContent = "Copying";
-            try {
-              var copied = false;
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                try {
-                  await Promise.race([
-                    navigator.clipboard.writeText(copy.dataset.mail),
-                    new Promise(function (_, reject) {
-                      setTimeout(function () { reject(new Error("Clipboard timeout")); }, 800);
-                    })
-                  ]);
-                  copied = true;
-                } catch (error) {
-                  copied = false;
-                }
-              }
-              if (!copied) {
-                var input = document.createElement("textarea");
-                input.value = copy.dataset.mail;
-                input.setAttribute("readonly", "");
-                input.style.position = "fixed";
-                input.style.opacity = "0";
-                document.body.appendChild(input);
-                input.select();
-                copied = document.execCommand("copy");
-                input.remove();
-              }
-              if (!copied) throw new Error("Clipboard unavailable");
-              copy.textContent = "Copied";
-              setTimeout(function () { copy.textContent = "Copy"; }, 1800);
-            } catch (error) {
-              copy.textContent = "Use email link";
-              setTimeout(function () { copy.textContent = "Copy"; }, 1800);
-            }
-          });
-        }
-      })();
-    </script>
+    <footer class="night" id="contact"><div class="frame"><div class="footer-grid"><h2>Have something<br>worth building?</h2><div class="footer-contact"><p>I’m interested in civic technology, finance learning tools and useful software.</p><div class="mailrow"><a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a><button class="copybtn no-print" id="copybtn" type="button" data-mail="thedanielsultan@gmail.com">Copy</button></div></div><nav class="footer-social" aria-label="Social profiles"><a href="https://github.com/itsdanielsultan">GitHub</a><a href="https://www.linkedin.com/in/daniel-sultan">LinkedIn</a><a href="https://medium.com/@itsdanielsultan">Medium</a></nav></div><div class="colophon"><a href="index.html">Daniel Sultan</a><span>Mississauga, Canada</span></div></div></footer>
+    <script src="site.js?v=20261023" defer></script>
   </body>
 </html>

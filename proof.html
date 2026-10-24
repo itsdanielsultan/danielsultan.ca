@@ -33,11 +33,12 @@
     </script>
     <link rel="stylesheet" href="styles.css?v=16" />
     <link rel="stylesheet" href="atlas.css?v=2" />
+    <link rel="stylesheet" href="revamp.css?v=20261023" />
     <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
   </head>
@@ -45,41 +46,38 @@
   <body>
     <a class="skip" href="#main">Skip to content</a>
 
-    <header class="masthead">
-      <div class="frame">
-        <a class="wordmark" href="index.html">Daniel<span class="surname">&nbsp;Sultan</span></a>
-        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open main navigation"><span class="nav-toggle-icon" aria-hidden="true"></span></button>
-        <nav class="mainnav" id="main-navigation" aria-label="Main">
-          <a class="nav-home" href="index.html">Home</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="proof.html" aria-current="page">Proof</a>
-          <a href="history.html">History</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
-          <span class="theme-toggle-track" aria-hidden="true"></span>
-        </button>
-      </div>
-    </header>
+    <header class="masthead"><div class="frame"><a class="wordmark" href="index.html" aria-label="Daniel Sultan, home">Daniel Sultan</a><button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open main navigation"><span class="nav-toggle-icon" aria-hidden="true"></span></button><nav class="mainnav" id="main-navigation" aria-label="Main"><a href="portfolio.html">Work</a><a href="about.html">About</a><a href="proof.html" aria-current="page">Evidence</a><a href="contact.html">Contact</a></nav><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A9 9 0 0 1 9.4 3.5a9 9 0 1 0 11.1 11.1Z"/></svg></button></div></header>
 
     <main id="main">
       <section class="page-head frame">
         <p class="eyebrow">Public work · Sources linked</p>
-        <h1>Evidence, not just descriptions.</h1>
-        <p>Live products, published contributions and documented changes. These links let you inspect what I have built and where it still has limits.</p>
+        <h1>Work you can verify.</h1>
+        <p>A local media feature, a published software contribution and live projects. Follow the original sources, try the tools and inspect how the work has changed.</p>
+      </section>
+
+      <section class="band frame" id="media" aria-labelledby="media-title">
+        <div class="rule-label"><h2 id="media-title">Featured by 905HUB</h2><span class="count">September 30, 2026</span></div>
+        <article class="lrow">
+          <div class="lrow-when"><strong>905HUB</strong><span>Local media feature</span></div>
+          <div>
+            <h3>Future Mississauga in the local conversation</h3>
+            <p class="plain">905HUB shared my Mississauga visualisations in a collaborative Instagram post with @itsdanielsultan. The original post credits the visuals to me and invites residents to discuss the city's changing neighbourhoods.</p>
+            <div class="links"><a class="link" href="https://www.instagram.com/905hub/p/Dd6sR2qFDEH/">View the original feature</a><a class="link" href="future-mississauga.html">Read the project story</a></div>
+          </div>
+        </article>
       </section>
 
       <section class="band frame" id="future-proof" aria-labelledby="future-proof-title">
         <div class="rule-label"><h2 id="future-proof-title">A city model you can inspect</h2><span class="count">Future Mississauga · Ongoing</span></div>
         <article class="lrow lrow--illustrated">
-          <div class="lrow-when"><strong>19 areas</strong><span>Interactive atlas</span></div>
+          <div class="lrow-when"><strong>Ongoing</strong><span>Interactive atlas</span></div>
           <div>
             <h3>Sources, revisions and open questions</h3>
             <p class="plain">The live atlas combines an interactive explorer, neighbourhood views and existing-and-proposed comparisons. A public review records sources and remaining approximations; dated studies show how individual models changed.</p>
-            <p class="plain">October 17’s release added Churchill Meadows and reference-based exterior studies for Winding Trail and 228 Queen Street South. The October 21 update added Lisgar &amp; Argentia and improved lighting and edge definition in the interactive viewer.</p>
+            <p class="plain">The current atlas includes Churchill Meadows, Lisgar &amp; Argentia, Meadowvale Village and East Credit &amp; Creditview. Reference-based studies show how Winding Trail and other individual buildings changed as better information became available.</p>
             <div class="links"><a class="link" href="https://futuremississauga.com/accuracy-review.html">Inspect the source review</a><a class="link" href="https://futuremississauga.com/updates.html">Read the release history</a><a class="link" href="future-mississauga.html#refinements">See a before and after</a></div>
           </div>
-          <figure class="project-photo"><a href="future-mississauga.html" aria-label="Read the Future Mississauga case study"><img src="assets/work/future-mississauga-downtown.webp" width="1600" height="1000" alt="Downtown development scenario from the Future Mississauga atlas." decoding="async" /></a><figcaption>September 2026 atlas render.</figcaption></figure>
+          <figure class="project-photo"><a href="future-mississauga.html" aria-label="Read the Future Mississauga case study"><img src="assets/work/future-mississauga-downtown-20261023.avif" width="1200" height="750" alt="Downtown development scenario from the Future Mississauga atlas." decoding="async" /></a><figcaption>October 23, 2026 future scenario. City of Mississauga data · © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>. Contains information licensed under the <a href="https://www.ontario.ca/page/open-government-licence-ontario">Open Government Licence – Ontario</a>. <a href="https://futuremississauga.com/sources.html">Sources and limits</a>.</figcaption></figure>
         </article>
       </section>
 
@@ -106,13 +104,13 @@
           <div class="study-pair">
             <article class="proof-item" id="cire-proof">
               <h3>InvestmentRegulation.ca</h3>
-              <div class="factline"><div><b>69</b><span>Lessons</span></div><div><b>100</b><span>Practice questions</span></div><div><b>8</b><span>Chapters</span></div></div>
+              <div class="factline"><div><b>69</b><span>Lessons</span></div><div><b>100</b><span>Question bank</span></div><div><b>8</b><span>Chapters</span></div></div>
               <p>An independent study resource for the Canadian Investment Regulatory Exam, with flashcards, drills, a glossary and a mock exam.</p>
               <div class="links"><a class="link" href="https://investmentregulation.ca/">Try the site</a><a class="link" href="https://github.com/itsdanielsultan/Daniel-CIRE">Check the source</a></div>
             </article>
             <article class="proof-item" id="ifc-proof">
               <h3>IFC Prep</h3>
-              <div class="factline"><div><b>54</b><span>Lessons</span></div><div><b>324</b><span>Practice questions</span></div><div><b>18</b><span>Workshops</span></div></div>
+              <div class="factline"><div><b>54</b><span>Lessons</span></div><div><b>324</b><span>Assessment questions</span></div><div><b>18</b><span>Workshops</span></div></div>
               <p>An independent Investment Funds in Canada companion with flashcards, mock papers, offline use and a printable companion. Not CSI-endorsed or a replacement for the purchased course.</p>
               <div class="links"><a class="link" href="https://ifcprep.ca/">Try the site</a><a class="link" href="https://github.com/itsdanielsultan/IFC-Prep">Check the source</a></div>
             </article>
@@ -152,7 +150,7 @@
                 Graduated from The Woodlands Secondary School in June 2026.
               </p>
               <div class="links">
-                <a class="link" href="assets/Daniel_Sultan_Resume.pdf">See it on my résumé</a>
+                <a class="link" href="assets/Daniel-Sultan-Resume-October-2026.pdf">See it on my résumé</a>
               </div>
             </div>
           </article>
@@ -185,85 +183,7 @@
       </section>
     </main>
 
-    <footer class="night">
-      <div class="frame">
-        <div class="contact-grid">
-          <div>
-            <h2>Sources and contact</h2>
-            <p>Found something to improve, or want to know how a project works? I’d love to hear from you.</p>
-            <div class="mailrow">
-              <a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a>
-            </div>
-          </div>
-          <div class="directory">
-            <a href="portfolio.html"><span>Portfolio</span><span>Projects and build notes</span><span>→</span></a>
-            <a href="history.html"><span>History</span><span>Work and training</span><span>→</span></a>
-            <a href="https://github.com/itsdanielsultan"><span>GitHub</span><span>@itsdanielsultan</span><span>↗</span></a>
-            <a href="contact.html"><span>Contact</span><span>Ways to reach me</span><span>→</span></a>
-            <a href="index.html"><span>Home</span><span>Back to the start</span><span>→</span></a>
-          </div>
-        </div>
-        <div class="colophon"><span>© 2026 Daniel Sultan</span><span>Project links checked October 21, 2026</span></div>
-      </div>
-    </footer>
-
-    <script>
-      (function () {
-        var navToggle = document.getElementById("nav-toggle");
-        var mainNavigation = document.getElementById("main-navigation");
-        if (navToggle && mainNavigation) {
-          var closeMainNavigation = function (returnFocus) {
-            mainNavigation.classList.remove("is-open");
-            navToggle.setAttribute("aria-expanded", "false");
-            navToggle.setAttribute("aria-label", "Open main navigation");
-            if (returnFocus) navToggle.focus();
-          };
-
-          navToggle.addEventListener("click", function () {
-            var willOpen = navToggle.getAttribute("aria-expanded") !== "true";
-            mainNavigation.classList.toggle("is-open", willOpen);
-            navToggle.setAttribute("aria-expanded", String(willOpen));
-            navToggle.setAttribute("aria-label", willOpen ? "Close main navigation" : "Open main navigation");
-          });
-
-          mainNavigation.addEventListener("click", function (event) {
-            if (event.target.closest("a")) closeMainNavigation(false);
-          });
-
-          document.addEventListener("keydown", function (event) {
-            if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
-              closeMainNavigation(true);
-            }
-          });
-
-          var desktopNavigation = window.matchMedia("(min-width: 641px)");
-          var resetMobileNavigation = function (event) {
-            if (event.matches) closeMainNavigation(false);
-          };
-          if (desktopNavigation.addEventListener) {
-            desktopNavigation.addEventListener("change", resetMobileNavigation);
-          } else {
-            desktopNavigation.addListener(resetMobileNavigation);
-          }
-        }
-
-        var themeToggle = document.getElementById("theme-toggle");
-        if (!themeToggle) return;
-
-        var syncThemeToggle = function () {
-          var isDark = document.documentElement.dataset.theme === "dark";
-          themeToggle.setAttribute("aria-pressed", String(isDark));
-          themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
-        };
-
-        syncThemeToggle();
-        themeToggle.addEventListener("click", function () {
-          var nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-          document.documentElement.dataset.theme = nextTheme;
-          try { localStorage.setItem("daniel-theme", nextTheme); } catch (error) {}
-          syncThemeToggle();
-        });
-      })();
-    </script>
+    <footer class="night" id="contact"><div class="frame"><div class="footer-grid"><h2>Have something<br>worth building?</h2><div class="footer-contact"><p>I’m interested in civic technology, finance learning tools and useful software.</p><div class="mailrow"><a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a><button class="copybtn no-print" id="copybtn" type="button" data-mail="thedanielsultan@gmail.com">Copy</button></div></div><nav class="footer-social" aria-label="Social profiles"><a href="https://github.com/itsdanielsultan">GitHub</a><a href="https://www.linkedin.com/in/daniel-sultan">LinkedIn</a><a href="https://medium.com/@itsdanielsultan">Medium</a></nav></div><div class="colophon"><a href="index.html">Daniel Sultan</a><span>Mississauga, Canada</span></div></div></footer>
+    <script src="site.js?v=20261023" defer></script>
   </body>
 </html>

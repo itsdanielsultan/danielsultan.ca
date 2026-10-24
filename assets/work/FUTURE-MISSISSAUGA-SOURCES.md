@@ -19,3 +19,9 @@ Updated 21 October 2026.
 - Source coverage and limitations: https://futuremississauga.com/accuracy-review.html
 - These are published rendered studies, not the underlying reference photographs or drawings. The study retains estimated dimensions and schematic ground. No private supplied source materials are included.
 - The September skyline is retained with its original date. The October model release does not imply that this older gallery render was regenerated.
+
+## October 23, 2026 portfolio refresh
+
+- `future-mississauga-downtown-20261023.avif`: downloaded unaltered from https://futuremississauga.com/gallery/refined-previews/wide/downtown-future-7dee8a2cd8fa.avif (1200 × 750). Used for the homepage and current project/evidence entries. Homepage media uses a responsive crop; the full image is linked from the case study.
+- Source attribution travels in adjacent text, including City of Mississauga data, © OpenStreetMap contributors (ODbL 1.0), and Contains information licensed under the Open Government Licence – Ontario. Full atlas credits: https://futuremississauga.com/sources.html and https://futuremississauga.com/licenses/CREDITS.md.
+- 905HUB coverage: https://www.instagram.com/905hub/p/Dd6sR2qFDEH/ . The September 30, 2026 collaborative post credits Daniel's visuals. This is evidence of a media feature, not an official City endorsement, award, or reach statistic.

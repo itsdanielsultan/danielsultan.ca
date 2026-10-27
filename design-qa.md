@@ -1,6 +1,8 @@
-# Future Mississauga visual-language refresh
+# Archived: September 2026 visual-language refresh
 
 Date: 26 September 2026.
+
+Historical QA for a superseded design. These checks do not describe the current studio rebuild.
 
 ## Source and implementation
 

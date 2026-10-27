@@ -1,113 +1,16 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="canonical" href="https://danielsultan.ca/cire.html" />
-    <title>How I built my CIRE course, Daniel Sultan</title>
-    <meta name="description" content="How Daniel Sultan built investmentregulation.ca, a free course for the CIRE exam." />
-    <meta property="og:title" content="How I built my CIRE course" />
-    <meta property="og:description" content="How Daniel Sultan built a free course for the Canadian Investment Regulatory Exam." />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://danielsultan.ca/cire.html" />
-    <meta property="og:image" content="https://danielsultan.ca/assets/daniel-sultan-projects-social-card.png?v=2" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Daniel Sultan: currently building Future Mississauga and InvestmentRegulation.ca" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://danielsultan.ca/assets/daniel-sultan-projects-social-card.png?v=2" />
-    <script>
-      (function () {
-        document.documentElement.classList.add("js");
-        try {
-          var savedTheme = localStorage.getItem("daniel-theme");
-          var preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-          document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
-        } catch (error) {
-          document.documentElement.dataset.theme = "light";
-        }
-      })();
-    </script>
-    <link rel="stylesheet" href="styles.css?v=16" />
-    <link rel="stylesheet" href="atlas.css?v=2" />
-    <link rel="stylesheet" href="revamp.css?v=20261023" />
-    <link rel="icon" type="image/png" href="assets/favicon/openmoji-sunglasses-color.png?v=4" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
-  </head>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Learning tools | Daniel Sultan</title><meta name="description" content="The work behind InvestmentRegulation.ca and IFC Prep, two free, independent Canadian finance study resources."><link rel="canonical" href="https://danielsultan.ca/cire.html"><meta property="og:title" content="Learning tools | Daniel Sultan"><meta property="og:description" content="The work behind InvestmentRegulation.ca and IFC Prep, two free, independent Canadian finance study resources."><meta property="og:type" content="website"><meta property="og:url" content="https://danielsultan.ca/cire.html"><meta property="og:image" content="https://danielsultan.ca/assets/work/downtown-native-20261023.webp"><meta property="og:image:alt" content="Future Mississauga, a 3D city atlas by Daniel Sultan"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="assets/favicon/openmoji-sunglasses-color.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;450;500;550;600&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="studio.css?v=20261027a"><script src="studio.js?v=20261027a" defer></script></head><body class="document-page"><a class="skip-link" href="#main">Skip to content</a><aside class="identity-rail"><a class="identity-name" href="index.html" aria-label="Daniel Sultan, home">Daniel<br> Sultan</a><p class="identity-intro">Independent builder. Curious about cities and how we learn.</p><p class="identity-support">Maps, study tools and small experiments, made in Mississauga.</p><nav class="primary-nav" aria-label="Main"><a href="index.html" aria-current="page">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><nav class="project-index"  aria-label="Selected work"><a href="index.html#project-city"><span class="project-number">01</span><span>City atlas</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a href="index.html#project-learning"><span class="project-number">02</span><span>Learning tools</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a href="index.html#project-software"><span class="project-number">03</span><span>Software</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a></nav><div class="rail-footer"><div class="rail-profile-links"><a href="https://github.com/itsdanielsultan">GitHub</a><a href="https://medium.com/@itsdanielsultan">Writing</a><a href="assets/Daniel-Sultan-Resume-October-2026.pdf">Résumé</a></div><a class="rail-email" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a></div></aside><div class="page-shell"><main id="main" tabindex="-1"><header class="page-heading"><a class="back-link" href="index.html#project-learning"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5m6-6-6 6 6 6"/></svg>Back to work</a><h1>Financial learning tools</h1><p class="lead">Two free, independent study tools that put explanations, practice and review in the same place. I built them to give learners a clear route through technical finance material, starting with the ideas behind the terminology.</p><div class="text-links"><a href="https://investmentregulation.ca/">Open InvestmentRegulation.ca</a><a href="https://ifcprep.ca/">Open IFC Prep</a></div></header>
 
-  <body>
-    <a class="skip" href="#main">Skip to content</a>
+<figure class="media"><a href="assets/work/cire-study-screen.webp" data-image><img src="assets/work/cire-study-screen.webp" alt="InvestmentRegulation.ca study dashboard showing lessons, flashcards and practice modes." loading="lazy" decoding="async"></a><figcaption>InvestmentRegulation.ca dashboard · September 2026.</figcaption></figure>
 
-    <header class="masthead"><div class="frame"><a class="wordmark" href="index.html" aria-label="Daniel Sultan, home">Daniel Sultan</a><button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open main navigation"><span class="nav-toggle-icon" aria-hidden="true"></span></button><nav class="mainnav" id="main-navigation" aria-label="Main"><a href="portfolio.html">Work</a><a href="about.html">About</a><a href="proof.html">Evidence</a><a href="contact.html">Contact</a></nav><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A9 9 0 0 1 9.4 3.5a9 9 0 1 0 11.1 11.1Z"/></svg></button></div></header>
+<section class="essay-section" id="starting-point"><h2>Start with understanding</h2><div class="section-body"><p>The first version of InvestmentRegulation.ca took three weeks. I organised the material into a sequence that begins with “What is investing?” before moving into products, regulation and professional responsibilities. The syllabus set the scope; the explanations needed a foundation a new learner could follow.</p><div class="text-links"><a href="https://medium.com/@itsdanielsultan/introducing-investmentregulation-ca-659e3e421be0">Read the build story</a></div></div></section>
 
-    <main id="main">
-      <section class="page-head frame">
-        <p class="eyebrow">InvestmentRegulation.ca · Launched August 2026</p>
-        <h1>How I built my CIRE course.</h1>
-        <div class="case-intro">
-          <div>
-            <p class="byline">An independent, free and open-source study resource by Daniel Sultan.</p>
-            <p>I built the first version over three weeks. The goal was to turn a technical syllabus into a course someone could follow from the beginning, with explanations and practice in the same place.</p>
-            <div class="links"><a class="link" href="https://investmentregulation.ca/">Try the course</a><a class="link" href="https://github.com/itsdanielsultan/Daniel-CIRE">Read the source</a></div>
-          </div>
-          <figure class="project-photo"><a href="assets/work/cire-study-screen.webp" aria-label="View the full-size CIRE study screen"><img src="assets/work/cire-study-screen.webp" width="1000" height="720" alt="InvestmentRegulation.ca study dashboard with a course map and practice options." decoding="async" /></a><figcaption>The study dashboard. September 2026.</figcaption></figure>
-        </div>
-      </section>
+<section class="essay-section" id="cire"><h2>InvestmentRegulation.ca</h2><div class="section-body"><p>The CIRE resource includes 69 lessons across eight chapters and a 100-question bank, alongside flashcards, drills, a glossary and mock practice. I placed teaching before checks and kept missed-question review close to the activity. Progress and bookmarks stay in the learner’s browser, without an account.</p><div class="text-links"><a href="https://investmentregulation.ca/">Try the CIRE resource</a><a href="https://github.com/itsdanielsultan/Daniel-CIRE">Inspect the CIRE source</a></div></div></section>
 
-      <section class="band frame">
-        <div class="split">
-          <aside>The starting point</aside>
-          <div class="prose">
-            <h2>Explain the idea before the rule.</h2>
-            <p>The official material I started with was spread across three PDFs. It was useful for identifying what to study, but the terminology could be difficult without a foundation in finance.</p>
-            <p>I organized the course around that missing foundation. The first lesson asks “What is investing?” Later lessons build toward products, regulation and the responsibilities of investment professionals.</p>
-            <p>The site is a study aid for the Canadian Investment Regulatory Exam, not an official course, professional credential or guarantee of exam results.</p>
-          </div>
-        </div>
-      </section>
+<section class="essay-section" id="ifc-prep"><h2>IFC Prep</h2><div class="section-body"><p>The separate Investment Funds in Canada companion extends that approach with 54 original lessons, 18 chapter workshops, 324 assessment questions and 162 flashcards. Worked examples and written-answer exercises give learners room to explain their reasoning. Downloadable HTML and a printable companion support study away from the live site.</p><div class="text-links"><a href="https://ifcprep.ca/">Try IFC Prep</a><a href="https://github.com/itsdanielsultan/IFC-Prep">Inspect the IFC Prep source</a></div></div></section>
 
-      <section class="feature">
-        <div class="frame feature-inner">
-          <div>
-            <p class="eyebrow">Inside the course</p>
-            <h2>Read, practise, review.</h2>
-            <div class="factline"><div><b>69</b><span>Lessons</span></div><div><b>8</b><span>Chapters</span></div><div><b>100</b><span>Practice questions</span></div></div>
-            <p>Lessons, flashcards and a searchable glossary help introduce the material. Short drills and a 100-question mock exam give learners another way to work through it, then review what they missed.</p>
-            <p>Bookmarks and progress stay in the learner’s browser. There is no account or fee, and the source is open for inspection. The mock is a practice tool, not an exact replica of the official exam.</p>
-          </div>
-        </div>
-      </section>
+<figure class="media"><a href="assets/work/ifc-prep-home.jpg" data-image><img src="assets/work/ifc-prep-home.jpg" alt="IFC Prep home screen with course progress, the next lesson and flashcard and practice modes." loading="lazy" decoding="async"></a><figcaption>IFC Prep home screen. Study progress stays in the learner’s browser.</figcaption></figure>
 
-      <section class="band frame">
-        <div class="split">
-          <aside>Design decisions</aside>
-          <div class="prose">
-            <h2>Keep the next step clear.</h2>
-            <p>The lesson sequence matters as much as the individual explanations. Instead of starting with a quiz, the course gives a learner a route through the concepts, then places practice and review alongside it.</p>
-            <p>The interface uses a restrained visual system, with strong typography, clear navigation and light and dark themes. Lessons, flashcards and drills each have a distinct job without feeling like separate products.</p>
-            <h2>Make the work inspectable.</h2>
-            <p>Publishing the source lets people look at the questions and implementation, report problems and suggest improvements. Explanations and practice material still need judgement and checking against current official requirements.</p>
-            <div class="links"><a class="link" href="https://github.com/itsdanielsultan/Daniel-CIRE">Explore the repository</a><a class="link" href="https://medium.com/@itsdanielsultan/introducing-investmentregulation-ca-659e3e421be0">Read the launch post</a></div>
-          </div>
-        </div>
-      </section>
+<section class="essay-section" id="decisions"><h2>Keep the work inspectable</h2><div class="section-body"><p>I use distinct lesson, practice and review modes, with keyboard controls and light and dark themes. Both projects publish their source under the MIT licence, so the implementation and original practice material can be inspected and corrected.</p></div></section>
 
-      <section class="band frame">
-        <div class="split">
-          <aside>What came next</aside>
-          <div class="prose">
-            <h2>A second learning tool: IFC Prep.</h2>
-            <p>In October I published a separate companion for the Investment Funds in Canada course. It brings together 54 lessons, workshops, flashcards and original practice questions, with offline and printable options.</p>
-            <p>It follows the same principle: make the material easier to work through and keep progress with the learner. IFC Prep is independent, not CSI-endorsed, and does not replace the purchased course.</p>
-            <div class="links"><a class="link" href="https://ifcprep.ca/">Try IFC Prep</a><a class="link" href="portfolio.html#portfolio-ifc">See the portfolio entry</a></div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="night" id="contact"><div class="frame"><div class="footer-grid"><h2>Have something<br>worth building?</h2><div class="footer-contact"><p>I’m interested in civic technology, finance learning tools and useful software.</p><div class="mailrow"><a class="mail" href="mailto:thedanielsultan@gmail.com">thedanielsultan@gmail.com</a><button class="copybtn no-print" id="copybtn" type="button" data-mail="thedanielsultan@gmail.com">Copy</button></div></div><nav class="footer-social" aria-label="Social profiles"><a href="https://github.com/itsdanielsultan">GitHub</a><a href="https://www.linkedin.com/in/daniel-sultan">LinkedIn</a><a href="https://medium.com/@itsdanielsultan">Medium</a></nav></div><div class="colophon"><a href="index.html">Daniel Sultan</a><span>Mississauga, Canada</span></div></div></footer>
-    <script src="site.js?v=20261023" defer></script>
-  </body>
-</html>
+<section class="essay-section" id="limits"><h2>Independent study resources</h2><div class="section-body"><p>These tools do not establish licensing, registration or exam readiness. Practice questions are not official exam questions. IFC Prep is not affiliated with or endorsed by CSI and does not replace the purchased course. Rules and exam requirements change; learners should check current official sources.</p></div></section>
+</main><footer class="site-footer"><div><a href="proof.html">Sources &amp; recognition</a><a href="history.html">Work history</a><a href="contact.html">Contact</a></div><span>Daniel Sultan · Mississauga, Canada</span></footer></div><dialog class="image-viewer" aria-label="Project image"><button class="viewer-close" type="button" aria-label="Close image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button><figure><img alt=""><figcaption></figcaption></figure><a class="viewer-original" href="#">Open original image</a></dialog></body></html>

@@ -1,12 +1,12 @@
 # Future Mississauga imagery and copy
 
-Updated 21 October 2026.
+Updated 27 October 2026. Earlier image and design entries below are historical.
 
 - Website: https://futuremississauga.com/
 - Daniel's launch post: https://www.reddit.com/r/mississauga/comments/1wn14jq/i_made_a_3d_model_of_mississaugas_future_skyline/
 - `future-mississauga-downtown.webp`: real, unaltered project render, resized to 1600 × 1000 and compressed as WebP from https://futuremississauga.com/gallery/previews/591ee7eb58bfd53e/downtown-future.png
 - This image shows the retained development scenario, not a predicted completion year or guaranteed build-out. See the atlas's project evidence for schematic/uncertain forms and underlying credits.
-- Typography and palette follow the live atlas: Manrope, DM Sans, paper #f8f8f3, ink #192b31, muted #627074, rose #c47d88. The personal site's smaller accent text uses a darker rose for contrast. Its existing light/dark toggle is retained.
+- The superseded September design used the live atlas typography and palette: Manrope, DM Sans, paper #f8f8f3, ink #192b31, muted #627074, rose #c47d88. The personal site's smaller accent text uses a darker rose for contrast. That version retained a light/dark toggle. The current design uses white, graphite and cobalt with Instrument Serif and Inter.
 - `../daniel-sultan-projects-social-card.png` is a promotional banner composition made with built-in image generation using Daniel's real render and the website as references. It is not a model-evidence screenshot. It contains no portrait. The portfolio evidence image above remains the original render.
 
 ## October 2026 case study
@@ -22,6 +22,12 @@ Updated 21 October 2026.
 
 ## October 23, 2026 portfolio refresh
 
-- `future-mississauga-downtown-20261023.avif`: downloaded unaltered from https://futuremississauga.com/gallery/refined-previews/wide/downtown-future-7dee8a2cd8fa.avif (1200 × 750). Used for the homepage and current project/evidence entries. Homepage media uses a responsive crop; the full image is linked from the case study.
+- `future-mississauga-downtown-20261023.avif`: downloaded unaltered from https://futuremississauga.com/gallery/refined-previews/wide/downtown-future-7dee8a2cd8fa.avif (1200 × 750). Used in the first October 23 refresh. It is superseded on the homepage and project pages by the native render described below.
 - Source attribution travels in adjacent text, including City of Mississauga data, © OpenStreetMap contributors (ODbL 1.0), and Contains information licensed under the Open Government Licence – Ontario. Full atlas credits: https://futuremississauga.com/sources.html and https://futuremississauga.com/licenses/CREDITS.md.
 - 905HUB coverage: https://www.instagram.com/905hub/p/Dd6sR2qFDEH/ . The September 30, 2026 collaborative post credits Daniel's visuals. This is evidence of a media feature, not an official City endorsement, award, or reach statistic.
+
+## Current studio design
+
+- `downtown-native-20261023.webp`: 2400 × 1500 derivative of Daniel's original 6144 × 3840 October 23 render. Only resizing and WebP compression were applied. The entire original composition is retained. Native-source provenance is recorded in `SOURCES.md`.
+- The current personal site uses Instrument Serif and Inter, pure white, graphite and cobalt. It has one responsive project rail and no theme toggle.
+- Real project screenshots and Daniel's approved original portrait replace all generated concept placeholders.

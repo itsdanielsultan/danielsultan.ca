@@ -2,7 +2,7 @@
 
 Date: 26 September 2026.
 
-Historical QA for a superseded design. These checks do not describe the current studio rebuild.
+Historical QA for a superseded design. These checks do not describe or verify the October 27 narrative rebuild, which uses Inter, teal and horizontal navigation. The earlier Instrument Serif/cobalt studio design is also superseded.
 
 ## Source and implementation
 
@@ -42,4 +42,4 @@ Historical QA for a superseded design. These checks do not describe the current 
 
 The reference has no dark theme, portrait or personal-site navigation. Those are intentional retained features, not fidelity defects. LinkedIn publishing is a separate external workflow; this report does not claim that its banner was uploaded.
 
-final result: passed
+Historical result, September 26, 2026: passed.

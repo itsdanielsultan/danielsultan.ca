@@ -1,6 +1,6 @@
 # Future Mississauga imagery and copy
 
-Updated 27 October 2026. Earlier image and design entries below are historical.
+Updated 28 October 2026. Earlier image and design entries below are historical.
 
 - Website: https://futuremississauga.com/
 - Daniel's launch post: https://www.reddit.com/r/mississauga/comments/1wn14jq/i_made_a_3d_model_of_mississaugas_future_skyline/
@@ -26,8 +26,8 @@ Updated 27 October 2026. Earlier image and design entries below are historical.
 - Source attribution travels in adjacent text, including City of Mississauga data, © OpenStreetMap contributors (ODbL 1.0), and Contains information licensed under the Open Government Licence – Ontario. Full atlas credits: https://futuremississauga.com/sources.html and https://futuremississauga.com/licenses/CREDITS.md.
 - 905HUB coverage: https://www.instagram.com/905hub/p/Dd6sR2qFDEH/ . The September 30, 2026 collaborative post credits Daniel's visuals. This is evidence of a media feature, not an official City endorsement, award, or reach statistic.
 
-## Current narrative design, October 27, 2026
+## Current narrative design, October 28, 2026
 
 - `downtown-native-20261023.webp`: 2400 × 1500 derivative of Daniel's original 6144 × 3840 October 23 render. Only resizing and WebP compression were applied. The entire original composition is retained. Native-source provenance is recorded in `SOURCES.md`.
-- The current personal site uses Inter, white #ffffff, ink #152b29, muted #4f605d and teal #1b6259, with pale #f1f5f3 chapter backgrounds and a dark #153f39 closing section. Horizontal navigation and a sequential career-and-project story replace the earlier project rail. There is no theme toggle.
+- The current personal site uses Inter, white #ffffff, ink #29231f, muted #65594f and burnt orange #b74d0b, with pale #fff4e8 chapter backgrounds and a dark #713310 closing section. Horizontal navigation and a sequential career-and-project story replace the earlier project rail. There is no theme toggle.
 - Real project screenshots and Daniel's approved original portrait replace all generated concept placeholders.
